@@ -23,39 +23,39 @@
           </div>
           <div class="col-sm-6 col-xl-3">
 
-            <stat-card heading="Balance" :value="wallet.balance"
-            :total="wallet.balance" color="success"
-            :currency="wallet.currency"
+            <stat-card heading="Balance" :value="wallet?.balance"
+            :total="wallet?.balance" color="success"
+            :currency="wallet?.currency"
              subheading="Total Balance"
              icon="ti ti-coin ti-sm"/>
           </div>
         <div class="col-sm-6 col-xl-3">
 
-            <stat-card heading="Money Transfered" :value="wallet.total"
-            :total="wallet.total" color="dark"
-            :currency="wallet.currency"
+            <stat-card heading="Money Transfered" :value="wallet?.total"
+            :total="wallet?.total" color="dark"
+            :currency="wallet?.currency"
              subheading="Total Money Transfered"
              icon="ti ti-coin ti-sm"/>
           </div>
           <div class="col-sm-6 col-xl-3">
             <stat-card heading=" Deposit" :value="300"
-            :total="wallet.total" color="success"
-            :currency="wallet.currency"
+            :total="wallet?.total" color="success"
+            :currency="wallet?.currency"
              subheading="Total Deposit"
              icon="ti ti-coin ti-sm"/>
           </div>
           <div class="col-sm-6 col-xl-3">
             <stat-card heading="Withdraw" :value="0"
-            :total="wallet.total" color="danger"
-            :currency="wallet.currency"
+            :total="wallet?.total" color="danger"
+            :currency="wallet?.currency"
              subheading="Total Withdraw"
              icon="ti ti-coin ti-sm"/>
           </div>
 
           <div class="col-sm-6 col-xl-3">
             <stat-card heading="Exchange" :value="0"
-            :total="wallet.total" color="warning"
-            :currency="wallet.currency"
+            :total="wallet?.total" color="warning"
+            :currency="wallet?.currency"
              subheading="Total Exchange"
              icon="ti ti-exchange ti-sm"/>
           </div>
@@ -142,7 +142,7 @@ export default {
     components:{breadcrumb,StatCard},
     data:()=>({
         auth:user,
-        wallet:user.wallet,
+        wallet:user?.wallet,
         recent_transactions:[],
     }),
     methods:{

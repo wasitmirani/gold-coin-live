@@ -18,8 +18,17 @@ function sideBarMenu(){
     return HelperComponent::sideBar();
 }
 
+function getGoldApi(){
 
-function setSingleLink($title,$icon,$v_can=null,$v_route=null, $prefix="/portal"){
+    $response = Http::get('https://api.metalpriceapi.com/v1/latest?api_key=79fb1cdff580076cff110658bd153dcb&base=USD&currencies=EUR,XAU,XAG');
+    $data=json_decode($response->body(),true);
+    $data=collect($data['rates']);
+    return isset($data['XAU'])  ? $data['XAU'] : null;
+}
+
+
+
+  function setSingleLink($title,$icon,$v_can=null,$v_route=null, $prefix="/portal"){
     return [
         "title"=>$title,
         'type'=> 'single_link',
@@ -41,7 +50,15 @@ function singleImgUpload($request, $path)
 }
 
 function goldRates(){
-    $rates=GoldRate::orderBy('unit_cost','asc')->get();
+   $XAU_gold= getGoldApi();
+//    1 troy ounce  gold rate
+   $today_gold_rate=1/$XAU_gold;
+   $one_gram_usd=$today_gold_rate/31.1035;
+   $rates=GoldRate::orderBy('unit_cost','asc')->get();
+    foreach ($rates as $key => $rate) {
+        $gram_rate= round($one_gram_usd * $rate->unit_cost,2);
+        $rate->update(['rate'=>$gram_rate,'base_rate'=>$gram_rate]);
+    }
     return $rates;
 }
 

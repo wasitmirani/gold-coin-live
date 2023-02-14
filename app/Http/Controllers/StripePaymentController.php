@@ -56,13 +56,13 @@ class StripePaymentController extends Controller
                 "customer" => $customer->id,
                 "description" => "Test payment from ".config('app.name'),
                 "shipping" => [
-                  "name" => "Jenny Rosen",
+                  "name" => config('app.name'),
                   "address" => [
-                    "line1" => "510 Townsend St",
-                    "postal_code" => "98140",
-                    "city" => "San Francisco",
-                    "state" => "CA",
-                    "country" => "US",
+                    "line1" => "18 Dalston Gardens Victoria House HA7 1BU",
+                    "postal_code" => "HA7 1BU",
+                    "city" => "London",
+                    "state" => "London",
+                    "country" => "UK",
                   ],
                 ]
         ]);
@@ -73,7 +73,7 @@ class StripePaymentController extends Controller
             PaymentCharge::create([
                 'amount' => $package->rate,
                 'buying_rate' => $package->rate,
-                'PC-00'=>$id+1,
+                'slug'=>'PC-00'.$id+1,
                 'quantity'=>1,
                 'uuid'=>Str::uuid(),
                 'type'=>'deposit',
@@ -107,6 +107,6 @@ class StripePaymentController extends Controller
 
 
 
-        return back();
+        return back()->with('message','Payment successful!');
     }
 }

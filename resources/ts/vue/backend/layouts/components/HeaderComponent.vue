@@ -288,18 +288,18 @@
                             <div class="dropdown-divider"></div>
                         </li>
                         <li>
-                            <router-link class="dropdown-item" to="/portal/app-settings">
+                            <router-link class="dropdown-item" to="/portal/settings">
                                 <i class="ti ti-user-check me-2 ti-sm"></i>
                                 <span class="align-middle">My Profile</span>
                             </router-link>
                         </li>
-                        <li>
+                        <!-- <li>
                             <router-link class="dropdown-item" to="/portal/settings">
                                 <i class="ti ti-settings me-2 ti-sm"></i>
                                 <span class="align-middle">Settings</span>
                             </router-link>
-                        </li>
-                       
+                        </li> -->
+
                         <li>
                             <a class="dropdown-item" @click="logout">
                                 <i class="ti ti-logout me-2 ti-sm"></i>

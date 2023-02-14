@@ -24,7 +24,7 @@
             @csrf
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-12 ">
-                    @if (Session::has('message'))
+                @if (Session::has('message'))
                     <div class="alert alert-info">{{ Session::get('message') }}</div>
                  <br>
                  @endif
@@ -161,6 +161,7 @@
         --------------------------------------------*/
         function stripeResponseHandler(status, response) {
             if (response.error) {
+                alert(response.error.message);
                 $('.error')
                     .removeClass('hide')
                     .find('.alert')

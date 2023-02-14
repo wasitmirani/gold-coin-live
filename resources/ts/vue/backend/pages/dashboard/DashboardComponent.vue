@@ -19,10 +19,8 @@
             </div>
             <!-- View sales -->
 
-            <!-- Statistics -->
+       
 
-            <!--/ Statistics -->
-           
 
         </div>
 </template>

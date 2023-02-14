@@ -46,7 +46,7 @@ class CartController extends Controller
             'buying_rate'=>$package->rate,
         ]);
         if($request->payment_type="bank"){
-            return redirect()->route('bank.payment', ['uuid'=>$cart->uuid])->with('message', 'Purchase successful');
+            return redirect()->route('bank.payment', ['uuid'=>$cart->uuid]);
         }
 
 

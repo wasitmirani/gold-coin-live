@@ -75,7 +75,7 @@ input[type="radio"] {
                       </div>
                       <div class="fugu-input-field">
                         <label>Write your message</label>
-                        <textarea name="textarea" placeholder="Write us your question here..."></textarea>
+                        <textarea name="message" placeholder="Write us your question here..."></textarea>
                       </div>
 
                     </div>
@@ -87,12 +87,12 @@ input[type="radio"] {
                             <h3>Checkout summary</h3>
 
                             <ul>
-                                <li>Package: <span>{{ ucfirst($package->name) }}- {{$package->unit_cost}}{{$package->unit}} </span></li>
+                                <li>Package: <span>{{ ucfirst($package->name) }} - {{$package->unit_cost}}{{$package->unit}} </span></li>
                                 <li>Subtotal: <span>${{ $package->rate }}</span></li>
 
                                 <li>Coupon: <span>$00.00</span></li>
                                 <li>Total: <span>${{ $package->rate }}</span></li>
-                                <li><b>Payable Total:</b> <span><b>${{ $package->rate }}</b></span></li>
+                                <li><b>Payable Total: </b> <span><b>${{ $package->rate }}</b></span></li>
                             </ul>
                         </div>
 
@@ -105,19 +105,22 @@ input[type="radio"] {
 
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                      <input type="radio" class="form-check-input" checked value="bank" name="payment_type">Pay via Direct bank transfer
+                                      <input style="padding: 10px !important;
+                                      margin-top: 5px;" type="radio" class="form-check-input" checked value="bank" name="payment_type"> Pay via Direct bank transfer
                                     </label>
-                                  </div>
+                                </div>
                                   <div class="form-check">
                                     <label class="form-check-label">
-                                      <input type="radio" class="form-check-input" value="paypal" name="payment_type">Pay via PayPal
+                                      <input  style="padding: 10px !important;
+                                      margin-top: 5px;"  type="radio" class="form-check-input" value="paypal" name="payment_type"> Pay via PayPal
                                     </label>
                                   </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" required type="checkbox" value="" id="flexCheckDefault">
+                                    <input style="padding: 10px !important;
+                                    margin-top: 5px;" class="form-check-input" required type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        I’ve read and accept the <a href="#">Terms &amp; Conditions*</a>
+                                           I’ve read and accept the <a href="#">Terms &amp; Conditions*</a>
                                     </label>
                                 </div>
                                 <button type="submit"  id="fugu-input-submit">Place order</button>
