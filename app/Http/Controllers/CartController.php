@@ -45,10 +45,13 @@ class CartController extends Controller
             'amount'=>$package->rate,
             'buying_rate'=>$package->rate,
         ]);
-        if($request->payment_type="bank"){
+        if($request->payment_type="card"){
             return redirect()->route('bank.payment', ['uuid'=>$cart->uuid]);
         }
 
+        if($request->payment_type="bank"){
+            return redirect()->route('bank');
+        }
 
 
     }

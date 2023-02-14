@@ -106,13 +106,13 @@ input[type="radio"] {
                                 <div class="form-check">
                                     <label class="form-check-label">
                                       <input style="padding: 10px !important;
-                                      margin-top: 5px;" type="radio" class="form-check-input" checked value="bank" name="payment_type"> Pay via Direct bank transfer
+                                      margin-top: 5px;" type="radio" class="form-check-input" checked value="card" name="payment_type">Pay via credit card
                                     </label>
                                 </div>
                                   <div class="form-check">
                                     <label class="form-check-label">
                                       <input  style="padding: 10px !important;
-                                      margin-top: 5px;"  type="radio" class="form-check-input" value="paypal" name="payment_type"> Pay via PayPal
+                                      margin-top: 5px;"  type="radio" class="form-check-input" value="bank" name="payment_type"> Pay via Direct bank transfer
                                     </label>
                                   </div>
 

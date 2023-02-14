@@ -21,8 +21,10 @@
                         <img src="http://pharmadigitalgoldcoin.com/assets/images/social/call.svg" alt="">
                       </div>
                       <h5>Call us</h5>
-                      <p>+44 7776 398036</p>
-                      <p>+971 50 624 9964 </p>
+                      <p>+44 7776 398036
+                      <br>+971 50 624 9964
+                      </p>
+                     
                     </a>
                   </li>
                   <li>

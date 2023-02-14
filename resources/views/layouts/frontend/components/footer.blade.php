@@ -14,7 +14,7 @@
           <div class="fugu-footer-menu">
              <span>Quick Links</span>
             <ul>
-              
+
                 <li><a href="{{route('client-account-agreement')}}">Client Account Agreement</a></li>
                 <!--<li><a href="{{route('gold-backed')}}">Gold backed</a></li>-->
               <li><a href="{{route('vault-terms')}}"> Vault Terms</a></li>
@@ -40,6 +40,8 @@
             <span>Contact</span>
             <ul>
               <li><a href="tel:+44 7776 398036">+44 7776 398036</a></li>
+              <li><a href="tel:+971 50 624 9964">+971 50 624 9964</a></li>
+
               <li><a href="mailto:info@pharmadigitalgoldcoin.com">info@pharmadigitalgoldcoin.com</a></li>
             </ul>
           </div>
