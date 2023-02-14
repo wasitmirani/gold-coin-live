@@ -1,0 +1,10 @@
+.adjust-button {
+    float: right;
+    margin-top: 30px;
+}
+.form-check{
+    display: flex;
+}
+.form-check .form-check-input {
+    transform: scale(0.6);
+}

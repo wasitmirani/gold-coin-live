@@ -1,0 +1,72 @@
+
+<?php
+
+
+use App\Models\Setting;
+
+use App\Models\GoldRate;
+use Illuminate\Support\Str;
+use App\helpers\HelperComponent;
+
+
+
+
+//  $one_gm = 0.08573535211509113;
+
+
+function sideBarMenu(){
+    return HelperComponent::sideBar();
+}
+
+
+function setSingleLink($title,$icon,$v_can=null,$v_route=null, $prefix="/portal"){
+    return [
+        "title"=>$title,
+        'type'=> 'single_link',
+        "icon"=>$icon,
+        "can"=>$v_can,
+        "route"=>$prefix.$v_route,
+    ];
+}
+function singleImgUpload($request, $path)
+{
+    if ($request->hasfile('image')) {
+        $name=Str::random(20);
+        // dd($name);
+        $name = $name . "-" . time() . '.' . $request->image->extension();
+        $request->image->move(public_path($path), $name);
+    } else
+        $name = "";
+    return $name;
+}
+
+function goldRates(){
+    $rates=GoldRate::orderBy('unit_cost','asc')->get();
+    return $rates;
+}
+
+function getLayoutColors(){
+   $setting= Setting::where('user_id',auth()->user()->id)->first();
+   if(!empty($setting)){
+
+    return $setting;
+   }
+   else {
+    $setting= Setting::where('type','default')->first();
+    return $setting;
+   }
+}
+
+function setSubMenu($title,$icon,$v_can=null,$v_route=null,$prefix="/portal"){
+    return [
+        "title"=>$title,
+        "icon"=>$icon,
+        "can"=>$v_can,
+        "route"=>$prefix.$v_route,
+    ];
+ }
+
+
+
+
+
