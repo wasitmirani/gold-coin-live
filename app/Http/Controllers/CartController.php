@@ -27,11 +27,14 @@ class CartController extends Controller
                 'password' => Hash::make($request->email),
             ]);
         }
+
+        $service=round(($package->rate/100)*1.5,2);
+
         $cart=Cart::create([
             'user_id'=>$user->id,
             'package_id'=>$package->id,
             'uuid'=>Str::uuid(),
-            'amount'=>$package->rate,
+            'amount'=>$package->rate+$service,
             'buying_rate'=>$package->rate,
             'payment_type'=>$request->payment_type,
             'details'=>$request->all(),
@@ -42,14 +45,13 @@ class CartController extends Controller
             'package_id'=>$package->id,
             'uuid'=>Str::uuid(),
             'quantity'=>1,
-            'amount'=>$package->rate,
+            'amount'=>$package->rate+$service,
             'buying_rate'=>$package->rate,
         ]);
 
         if($request->payment_type=="card"){
             return redirect()->route('bank.payment', ['uuid'=>$cart->uuid]);
         }
-
         if($request->payment_type=="bank"){
 
             return redirect()->route('bank');

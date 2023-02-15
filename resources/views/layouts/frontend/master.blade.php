@@ -30,17 +30,17 @@
 
   <link rel="stylesheet" href="{{ asset('/assets/css/main.css')}}" />
   <link rel="stylesheet" href="{{ asset('/assets/css/app.min.css')}}" />
-
+  @livewireStyles
 </head>
 
 
 <style>
-    
+
     body{
         font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-        
+
     }
-    
+
     h1,h2,h3,h5,h6,h4,span,p,a,strong,small,ul,li,button{
              font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     }
@@ -86,5 +86,7 @@
 
 
   <script src="{{ asset('assets/js/app.js')}}"></script>
+
+  @livewireScripts
 </body>
 </html>

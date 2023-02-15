@@ -50,7 +50,7 @@ Route::middleware(['auth'])->group(function () {
 
 Route::get('/checkout/{rate_id}',[FrontendController::class, 'checkout'])->name('checkout');
 Route::post('/processed/payment',[CartController::class,'addCart'])->name('processed.payment');
-Route::get('direct-bank-transfer/{uuid}',[TransitionController::class,'chargePayment'])->name('bank.payment');
+Route::get('payment-charge-transfer/{uuid}',[TransitionController::class,'chargePayment'])->name('bank.payment');
 
 
 });

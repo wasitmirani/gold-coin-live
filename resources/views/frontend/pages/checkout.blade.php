@@ -91,8 +91,12 @@ input[type="radio"] {
                                 <li>Subtotal: <span>${{ $package->rate }}</span></li>
 
                                 <li>Coupon: <span>$00.00</span></li>
-                                <li>Total: <span>${{ $package->rate }}</span></li>
-                                <li><b>Payable Total: </b> <span><b>${{ $package->rate }}</b></span></li>
+                                @php
+                                    $service=round(($package->rate/100)*1.5,2);
+                                @endphp
+                                <li>Services Fee: <span>{{$service}}</span></li>
+                                <li>Total: <span>${{ $package->rate+$service }}</span></li>
+                                <li><b>Payable Total: </b> <span><b>${{ $package->rate+$service }}</b></span></li>
                             </ul>
                         </div>
 
@@ -120,7 +124,7 @@ input[type="radio"] {
                                     <input style="padding: 10px !important;
                                     margin-top: 5px;" class="form-check-input" required type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                           I’ve read and accept the <a href="#">Terms &amp; Conditions*</a>
+                                           I’ve read and accept the <a href="{{route('vault-terms')}}">Terms &amp; Conditions*</a>
                                     </label>
                                 </div>
                                 <button type="submit"  id="fugu-input-submit">Place order</button>

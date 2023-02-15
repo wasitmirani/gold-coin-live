@@ -35,23 +35,21 @@ class StripePaymentController extends Controller
         $customer = Stripe\Customer::create(array(
 
                 "address" => [
-
                         "line1" => $cart->details['address'],
-
                         "postal_code" =>  $cart->details['zip'],
                         "city" =>  $cart->details['city'],
                         "state" => $cart->details['state'],
                         "country" => "US",
-
                     ],
 
-                "email" => "demo@gmail.com",
+                "email" =>  $cart->details['email'],
                 "name" => $cart->details['name'],
                 "source" => $request->stripeToken
              ));
 
+             $service=round(($package->rate/100)*1.5,2);
        $charge= Stripe\Charge::create ([
-                "amount" =>  $package->rate * 100,
+                "amount" =>  ($package->rate + $service) * 100,
                 "currency" => "usd",
                 "customer" => $customer->id,
                 "description" => "Test payment from ".config('app.name'),
@@ -107,6 +105,6 @@ class StripePaymentController extends Controller
 
 
 
-        return back()->with('message','Payment successful!');
+        return redirect()->route('thank');
     }
 }

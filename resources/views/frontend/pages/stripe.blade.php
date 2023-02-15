@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
 
-
+                            
 
                                 <button style="    margin-top: 30px;" type="submit"  id="fugu-input-submit"> Pay Now (${{$cart->amount  }})</button>
 
