@@ -52,7 +52,7 @@ p {
 <div style="margin-left: 20px;">
 <p>Every Party subject to Vault Services and the Agreement shall agree and acknowledge that if during the term of these Agreements there is a (herein after referred as &ldquo;Late Payment&rdquo;) Late Payment made by the Client to the Company then it shall be the duty of the Company to inform such an instance to the respective Client and Company is entitled to charge a Late Payment fee based on the Digital-Gold Coin number provided to the Client by us.</p>
 </div>
-<strong class="mt-2">5. INSURANCE.</p>
+<strong class="mt-2">5. INSURANCE.</strong>
     <div style="margin-left: 20px;">
 <p>The Company shall ensure that there is an all-risk insurance policy in place with reputable insurers, which shall insure the Physical Gold against any loss, damage, or destruction, subject to the terms, conditions, and limitations of liability in these Vault Terms.</p>
     </div>
