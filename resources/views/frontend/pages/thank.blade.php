@@ -2,10 +2,8 @@
 
 @section('title', 'Thank You')
 @section('content')
-@extends('layouts.frontend.master')
 
-@section('title', 'About')
-@section('content')
+
 
 @component('frontend.components.breadcrumb',['active'=>'Thank You'])
 

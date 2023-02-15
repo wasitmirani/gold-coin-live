@@ -20,10 +20,13 @@
                         <div class="fugu-default-content contact-page">
                             <h4>Our system's bank service</h2>
                                 <small>If you want to do the transaction, this bank can be used directly to transfer
-                                    amount</small>
+                                    amount
+
+                                    </small>
+
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 mt-4 mb-4">
                         <div class="fugu-contact-wrap  wow fadeInUpX" style="visibility: visible; animation-name: fadeInUpX;">
                             <div class="fugu-accordion-wrap">
                                 <div class="fugu-accordion-item d-flex">
@@ -53,9 +56,16 @@
 
 
 
-                <div class="col-lg-6 offset-lg-1 order-lg-2">
-
+                <div class="col-xl-5 col-lg-6 col-md-10 ">
+                    <div class="col-12">
+                        <div class="fugu-default-content contact-page">
+                            <h4>Upload Receipt</h2>
+                            <small>Once the payment has successfully been transferred, please upload a Screenshot or Receipt of the transfer here or email it to billing@pharmadigitalgoldcoin.com</small>
+                        </div>
+                    </div>
+                    <div class="col-12">
                     <livewire:upload-file></livewire:upload-file>
+                    </div>
                 </div>
             </div>
         </div>
