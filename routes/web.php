@@ -27,7 +27,9 @@ Route::get('/',[FrontendController::class, 'index'])->name('home');
 Route::get('about',[FrontendController::class, 'about'])->name('about');
 Route::get('contact',[FrontendController::class, 'contact'])->name('contact');
 Route::post('contact',[FrontendController::class, 'contactStore'])->name('contact.store');
-Route::get('bank-details',[FrontendController::class, 'bank'])->name('bank');
+Route::get('bank-details',[FrontendController::class, 'bank'])
+->middleware('auth')
+->name('bank');
 Route::get('thank',[FrontendController::class, 'thank'])->name('thank');
 Route::get('plans-pricing',[FrontendController::class, 'pricing'])->name('pricing');
 Route::get('/services',[FrontendController::class, 'service'])->name('services');

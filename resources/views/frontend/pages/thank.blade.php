@@ -1,9 +1,23 @@
 @extends('layouts.frontend.master')
 
+@section('title', 'Thank You')
+@section('content')
+@extends('layouts.frontend.master')
+
 @section('title', 'About')
 @section('content')
 
+@component('frontend.components.breadcrumb',['active'=>'Thank You'])
 
-<h1>Your query has been sent successfuly</h1>
+@endcomponent
+
+<div class="row justify-content-center mt-4">
+
+            <h4 style="text-align: center;">Your query has been sent successfuly</h4>
+</div>
+<div class="row justify-content-center ">
+        <img class="wow fadeInUpX" src="{{asset('assets/images/thank.png')}}" style="width: 60%; important" alt="" srcset="">
+</div>
+
 
 @endsection

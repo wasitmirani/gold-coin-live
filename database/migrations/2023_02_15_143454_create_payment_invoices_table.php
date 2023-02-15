@@ -13,10 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-            $table->string('meta_title')->nullable();
-            $table->string('meta_description')->nullable();
+        Schema::create('payment_invoices', function (Blueprint $table) {
+            $table->id();
+            $table->string('file');
+            $table->boolean('approved')->default(0);
+            $table->foreignId('user_id')->nullable()->constrained('users');
+            $table->timestamps();
         });
     }
 
@@ -27,8 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('payment_invoices');
     }
 };
