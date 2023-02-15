@@ -13,7 +13,7 @@
 
 <div class="row justify-content-center mt-4">
 
-            <h4 style="text-align: center;">Your query has been sent successfuly</h4>
+            <h4 style="text-align: center;">Your payment has been charge successfuly</h4>
 </div>
 <div class="row justify-content-center ">
         <img class="wow fadeInUpX" src="{{asset('assets/images/thank.png')}}" style="width: 60%; important" alt="" srcset="">
