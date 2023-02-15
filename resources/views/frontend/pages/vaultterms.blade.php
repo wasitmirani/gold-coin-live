@@ -5,12 +5,15 @@
     ul.b {
   list-style-type: square !important;
 }
-.list{
- list-style-type: square !important;  
-     margin-top: 8px;
+li{
+    list-style-type: decimal !important;
+     /* margin-top: 8px; */
 }
 p {
     margin-bottom: 10px !important;
+}
+*, ::after, ::before {
+    box-sizing: content-box;
 }
 </style>
 @section('content')
@@ -22,8 +25,10 @@ p {
 <div class="section bg-warning-600 fugu-section-padding">
     <div class="container">
       <div class="row">
-            <h3>VAULT TERMS</h3>
-<p>You hereinafter referred to as the Client agree and understand that by clicking to agree below, you are agreeing to enter into these vault services terms (hereinafter referred to as the &nbsp;&ldquo;Vault Terms&rdquo;) by and between you and Pharma Digital Gold Coins hereinafter referred to as the Company The Company hereby agrees to hold and store, in accordance with these Vault Terms, certain gold owned by the Client identified in the Client Account Agreement (hereinafter referred to as the "Agreement"). Capitalized terms defined in the&nbsp; Agreement are incorporated into these Vault Terms.</p>
+       <h3>VAULT TERMS</h3>
+<ul>
+<li>You hereinafter referred to as the Client agree and understand that by clicking to agree below, you are agreeing to enter into these vault services terms (hereinafter referred to as the &nbsp;&ldquo;Vault Terms&rdquo;) by and between you and Pharma Digital Gold Coins hereinafter referred to as the Company The Company hereby agrees to hold and store, in accordance with these Vault Terms, certain gold owned by the Client identified in the Client Account Agreement (hereinafter referred to as the "Agreement"). Capitalized terms defined in the&nbsp; Agreement are incorporated into these Vault Terms.</li>
+</ul>
 <p>Whereas,</p>
 <p>The Parties are collectively referred hereto as "we", "our" "us" and &ldquo;you&rdquo;, &ldquo;your&rdquo; or &ldquo;user&rdquo; means you as a user of the Site.</p>
 <p>1. SERVICES. The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the following services including and limited to vaulting, storage, handling and delivery, on behalf of the Client for the amount equivalent to the Physical Gold corresponding to the Digital Gold Coins held in Client&rsquo;s Account during the term of this Agreement (hereinafter referred to as the &ldquo;Vault Services&rdquo;).</p>
@@ -50,7 +55,7 @@ p {
 <p>Client may submit a redemption request to the Company during the hours of operation, which are displayed on www.pharmadigitalgoldcoin.com between office hours 9:00 - 5:00PM PST;</p>
 <p>7.2 Limitation on Redemption.</p>
 <p>&nbsp;The Company shall not be required to redeem Digital Gold Coins while Client&rsquo;s Account &nbsp;&nbsp;&nbsp;is subject to an administrative hold under Section 7 of the Agreement or suspended or restricted under Section 10 of the Agreement. Client agrees that the Company has no obligation to arrange for redemption at this stage.</p>
-<p>8. Intent.</p>
+<p>8. Intent</p>
 <p>&nbsp;The Company and Client agree that each Digital Gold Coin shall be in a form of negotiable electronic document of title.</p>
 <p>All Digital Gold Coins shall be deemed to incorporate and be subject to these Vault Terms;</p>
 <p>The person who shall be having the controls of an Account is the &ldquo;bearer,&rdquo; of all Digital Gold Coins held in the Account at any time.</p>
@@ -58,41 +63,59 @@ p {
 <p>For purposes with respect to the electronic documents of title represented by Digital Gold Coins:</p>
 <p>(i) Client&rsquo;s control over its Account gives Client a control over all Digital Gold Coins held in the Account and Client shall be deemed to maintain such Digital Gold Coins;</p>
 <p>(ii) Client consents to all additions and changes made by the Network in order to execute any Transactions submitted by Client;</p>
-<p>(iii)any modification or amendment to Digital Gold Coins made by the Company in accordance with these Vault Terms is authorized;</p>
-<p>(iv) the Network identifies that the person controlling an Account as either the person to whom Digital Gold Coins were issued or to whom Digital Gold Coins were most recently transferred;</p>
+<p>(iii) Any modification or amendment to Digital Gold Coins made by the Company in accordance with these Vault Terms is authorized.</p>
+<p>(iv) The Network identifies that the person controlling an Account as either the person to whom Digital Gold Coins were issued or to whom Digital Gold Coins were most recently transferred.</p>
 <p>(v) in an unlikely event of any inconsistency among nodes maintaining records of the assignment of Digital Gold Coins to Accounts on the Network, the node operated by the Company shall be considered the single authoritative copy of the Digital Gold Coins and the ledgers maintained on all other nodes shall be deemed copies of this authoritative copy; and</p>
-<p>(vi) the Network hereby establishes that the person who controls the Account to which Digital Gold Coins were transferred shall be considered as the person to whom the electronic document of title was issued or transferred.</p>
+<p>(vi) The Network hereby establishes that the person who controls the Account to which Digital Gold Coins were transferred shall be considered as the person to whom the electronic document of title was issued or transferred.</p>
 <p>9. Client&rsquo;s Data.</p>
 <p>Client authorizes the Company to provide any data, including Client&rsquo;s Account data and data which Client provided to PPGL- Co and the Company as part of the identity verification process (herein after collectively referred as the, &ldquo;Client&rsquo;s Data&rdquo;), to third parties as and when required to:</p>
 <p>(i) provide the Vault Services, and;</p>
-<p>(ii)&nbsp; comply with its legal and regulatory obligations, which may include providing Client&rsquo;s Data to law enforcement or regulators (as the case may be). &nbsp;the Company will comply with all applicable laws, including privacy and data protection laws, with respect to the processing of Client&rsquo;s Data.</p>
+<p>(ii)&nbsp; comply with its legal and regulatory obligations, which may include providing Client&rsquo;s Data to law enforcement or regulators (as the case may be). &nbsp;the Company will comply&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with all applicable laws, including privacy and data protection laws, with respect to the processing of Client&rsquo;s Data.</p>
 <p>10. Term and Termination. These Vault Terms have the same effective date as the Agreement and continue so long as the Agreement remains in effect. These Vault Terms shall terminate automatically upon termination of the Agreement, except for those terms which are intended to survive termination.</p>
 <p>11. Representations, Warranties and Covenants.</p>
 <p>In addition to the representations and warranties made in the Agreement, the Parties make the following representations, warranties and covenants:</p>
-<p>11.1 Mutual.</p>
-<p>Each party represents and warrants to the other that:</p>
-<p>(1)&nbsp;&nbsp; it has full corporate power and authority to enter into the Agreement and Vault Terms and to perform its obligations hereunder.</p>
-<p>(2)&nbsp;&nbsp; It has the necessary rights to enter into Agreement and Vault Terms and to perform its obligations hereunder.</p>
-<p>(3)&nbsp;&nbsp; The Agreement and the Vault Terms are binding obligations upon it and, when executed by the parties thereto, are enforceable in accordance with its terms, and if applicable, it is qualified to do business in the jurisdictions in which it will perform its obligations under this Agreement.</p>
-<p>11.2 By the Company.</p>
-<p>&nbsp;The Company covenants to Client to act as a Reasonable and Prudent Operator in the performance of the Vault Services. &nbsp;the Company represents to Client that the Physical Gold</p>
-<p>(1)&nbsp;&nbsp; &nbsp;shall be held in one or more allocated accounts with a Storage Provider in the Company&rsquo;s name for and behalf of Digital Gold Coins owners and</p>
-<p>(2)&nbsp;&nbsp; &nbsp;shall be segregated from gold held for &nbsp;any other parties &nbsp;&nbsp;&nbsp;that it will be comingled with Physical Gold that &nbsp;belongs to other Digital Gold Coins owners and affiliates of &nbsp;the Company or their respective financing institutions.</p>
-<p>11.3 By Client.</p>
+<strong class="mt-2">11.1 Mutual</strong>
+<div style="margin-left: 20px;">
+    <p>Each party represents and warrants to the other that:</p>
+    <ol type="1">
+        <li>It has full corporate power and authority to enter into the Agreement and Vault Terms and to perform its obligations hereunder.</li>
+        <li>It has the necessary rights to enter into Agreement and Vault Terms and to perform its obligations hereunder.</li>
+        <li>The Agreement and the Vault Terms are binding obligations upon it and, when executed by the parties thereto, are enforceable in accordance with its terms, and if applicable, it is qualified to do business in the jurisdictions in which it will perform its obligations under this Agreement.</li>
+
+      </ol>
+</div>
+
+<strong class="mt-2">11.2 By the Company</strong>
+<div style="margin-left: 20px;">
+<p> The Company covenants to Client to act as a Reasonable and Prudent Operator in the performance of the Vault Services. &nbsp;the Company represents to Client that the Physical Gold</p>
+<ol type="1">
+<li>Shall be held in one or more allocated accounts with a Storage Provider in the Company&rsquo;s name for and behalf of Digital Gold Coins owners and</li>
+<li>Shall be segregated from gold held for &nbsp;any other parties &nbsp;&nbsp;&nbsp;that it will be comingled with Physical Gold that &nbsp;belongs to other Digital Gold Coins owners and affiliates of &nbsp;the Company or their respective financing institutions.</li>
+</ol>
+
+</div>
+
+<strong class="mt-2">11.3 By Client.</strong>
+<div style="margin-left: 20px;">
 <p>Client covenants to the Company that Client is:</p>
-<p>(1) Is legally able to enter into these Vault Terms,</p>
-<p>(2) Will not use the Vault Services, directly or indirectly, for any fraudulent or illegal undertaking; and (3) will only use the Vault Services in a manner inconsistent with the Agreement, including these Vault Terms and applicable laws.</p>
-<p>Client acknowledges and agrees that</p>
-<p>(A) No fiduciary relationship exists between the Company and Client,</p>
-<p>(B) The decision to purchase or sell Digital Gold Coins, and when to purchase or sell the same, are the Client&rsquo;s decision alone.</p>
-<p>(C) Purchases or sales are made subject to Client&rsquo;s own prudence and judgment. Client further acknowledges that the gold market can be volatile and that Digital Gold Coins and Physical Gold prices may rise or fall over time.</p>
+<ol type="1">
+<li>Is legally able to enter into these Vault Terms,</li>
+<li> Will not use the Vault Services, directly or indirectly, for any fraudulent or illegal undertaking; and (3) will only use the Vault Services in a manner inconsistent with the Agreement, including these Vault Terms and applicable laws.</li>
+
+<strong>Client acknowledges and agrees that</strong>
+
+<li> No fiduciary relationship exists between the Company and Client,</li>
+<li> The decision to purchase or sell Digital Gold Coins, and when to purchase or sell the same, are the Client&rsquo;s decision alone.</li>
+<li>Purchases or sales are made subject to Clients own prudence and judgment. Client further acknowledges that the gold market can be volatile and that Digital Gold Coins and Physical Gold prices may rise or fall over time.</li>
+</ol>
+</div>
 <p>12. Service Limitations.</p>
-<p>&nbsp;The Company is not responsible for the provision of any Services by PPGL-Co or Client&rsquo;s use of the Services. &nbsp;The Company shall also not responsible for providing customer service to Client to resolve any issues Client may have related to Client&rsquo;s use of the Services; however, Client may contact the Company, using the contact details on www.pharmadigitalgoldcoin.com, solely as they relate to Vault Services, the Company shall resolve these issues within a time frame of 7 Business days.</p>
+<p>The Company is not responsible for the provision of any Services by PPGL-Co or Client&rsquo;s use of the Services. &nbsp;The Company shall also not responsible for providing customer service to Client to resolve any issues Client may have related to Client&rsquo;s use of the Services; however, Client may contact the Company, using the contact details on www.pharmadigitalgoldcoin.com, solely as they relate to Vault Services, the Company shall resolve these issues within a time frame of 7 Business days.</p>
 <p>13. Restrictions.</p>
 <p>In addition to the restrictions set forth in the Agreement, Client and each Authorized Person may not use any Vault Services, from, or on behalf of persons or entities</p>
-<p>(1)&nbsp;&nbsp; in a country embargoed by the United Kingdom, European Union, United Nations, Switzerland, &nbsp;</p>
+<p>(1) In a country embargoed by the United Kingdom, European Union, United Nations, Switzerland, &nbsp;</p>
 <p>Luxembourg, and United States</p>
-<p>(2)&nbsp;&nbsp; Blocked or denied by these authorities. Client further acknowledges and agrees that Client will&nbsp;</p>
+<p>(2) Blocked or denied by these authorities. Client further acknowledges and agrees that Client will&nbsp;</p>
 <p>not use Client&rsquo;s Account or the Vault Services for illegal transactions or those involving any person listed on the United Kingdom, European Union, United Nations, Switzerland, Luxembourg, U.S. Department of Treasury, Office of Foreign Assets Control, Specially Designated Nationals and Blocked Persons List (available at www.treas.gov/ofac) or the U.S. Department of State&rsquo;s Terrorist Exclusion List (available at www.state.gov) and other laws enforced by the Office of Foreign Assets Control or in connection with illegal activity of any kind.</p>
 <p>14. Indemnification.</p>
 <p>14.1 Notwithstanding the foregoing or anything to the contrary in the Agreement, Client agrees to defend, indemnify, and hold harmless the Company, and its respective employees, directors, agents, lessors and affiliates from and against any claim, suit, demand, loss, liability, damage, action, or proceeding arising out of &nbsp;or relating to</p>
@@ -161,8 +184,6 @@ p {
 <p>If any provision of these Vault Terms is determined to be invalid or unenforceable under any rule, law, or regulation or any governmental agency, local, state, or federal, such provision will be changed and interpreted to accomplish the objectives of the provision to the greatest extent possible under any applicable law, and the validity or enforceability of any other provision of these Vault Terms will not be affected. These Vault Terms do not waive rights that cannot be waived under applicable law.</p>
 <p>26.6 Survival.</p>
 <p>All provisions which by their nature extend beyond the expiration or termination of these Vault Terms, including, without limitation, sections pertaining to debts owed to the Company, redemption, and general provisions, will survive the termination or expiration of these Vault Terms.</p>
-    
-    </div>
     </div>
 </div>
 @endsection
