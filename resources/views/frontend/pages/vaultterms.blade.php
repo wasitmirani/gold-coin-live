@@ -31,10 +31,16 @@ p {
 </ul>
 <p>Whereas,</p>
 <p>The Parties are collectively referred hereto as "we", "our" "us" and &ldquo;you&rdquo;, &ldquo;your&rdquo; or &ldquo;user&rdquo; means you as a user of the Site.</p>
-<p>1. SERVICES. The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the following services including and limited to vaulting, storage, handling and delivery, on behalf of the Client for the amount equivalent to the Physical Gold corresponding to the Digital Gold Coins held in Client&rsquo;s Account during the term of this Agreement (hereinafter referred to as the &ldquo;Vault Services&rdquo;).</p>
-<p>1.1&nbsp; Confidentiality</p>
+<strong class="mt-2">1. SERVICES.</strong>
+<div style="margin-left: 20px;">
+<p>
+The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the following services including and limited to vaulting, storage, handling and delivery, on behalf of the Client for the amount equivalent to the Physical Gold corresponding to the Digital Gold Coins held in Client&rsquo;s Account during the term of this Agreement (hereinafter referred to as the &ldquo;Vault Services&rdquo;).</strong>
+
+<strong class="mt-2">1.1&nbsp; Confidentiality</strong>
+<div style="margin-left: 20px;">
 <p>The Parties subject to Vault Terms and Agreement hereby agrees and acknowledges that anytime during the terms these Agreements if any confidential information is being disclosed to them then it is their duty to keep such information confidential only, and shall not disclose it to any third party.</p>
 <p>For this purpose the &ldquo;Confidential Information&rdquo; shall mean but to limited to any information that has been exclusively named as Confidential Information.</p>
+</div>
 <strong class="mt-2">2. LOCATION.</strong>
 <div style="margin-left: 20px;">
 <p>The Company shall store the Physical Gold at one or more of the locations disclosed on www.pharmadigitalgoldcoin.com as updated from time to time.</p>
