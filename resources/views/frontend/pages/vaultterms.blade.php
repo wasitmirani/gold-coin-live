@@ -34,7 +34,7 @@ p {
 <strong class="mt-2">1. SERVICES.</strong>
 <div style="margin-left: 20px;">
 <p>
-The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the following services including and limited to vaulting, storage, handling and delivery, on behalf of the Client for the amount equivalent to the Physical Gold corresponding to the Digital Gold Coins held in Client&rsquo;s Account during the term of this Agreement (hereinafter referred to as the &ldquo;Vault Services&rdquo;).</strong>
+The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the following services including and limited to vaulting, storage, handling and delivery, on behalf of the Client for the amount equivalent to the Physical Gold corresponding to the Digital Gold Coins held in Client&rsquo;s Account during the term of this Agreement (hereinafter referred to as the &ldquo;Vault Services&rdquo;).</p>
 
 <strong class="mt-2">1.1&nbsp; Confidentiality</strong>
 <div style="margin-left: 20px;">
