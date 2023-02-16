@@ -63,15 +63,38 @@ with their headquarter at and are collectively referred hereto as
     <div class="row mt-4">
         <h4><strong>Definitions</strong>.</h4>
 <p>Unless otherwise defined throughout this Agreement, the terms stated below have the following meanings &nbsp;and all other terms as stated under this Agreement shall mean same as English language, 1.1 &ldquo;Terms &amp; Conditions&rdquo; shall mean and include this Terms &amp; Conditions and all or any other document incorporated by reference to this Terms &amp; Conditions that form the entire agreement between You and the Company regarding the use of the Service</p>
-<p><strong>1.2</strong> &ldquo;<strong>Client Assets</strong>&rdquo; means Physical Gold and corresponding Digital Gold Coins held in the Client&rsquo;s Account.</p>
-<p><strong>1.3</strong> &nbsp;&ldquo;<strong>External Account</strong>&rdquo; means any external financial account or other digital currency accounts, maintained by a third party outside of the Client&rsquo;s Account.</p>
-<p><strong>1.4</strong> &nbsp;&ldquo;<strong>Fees</strong>&rdquo; means</p>
-<ul>
-<li><strong>1.4.1</strong> any commission or other fees charged by the Company to the Client and</li>
-<li><strong>1.4.2</strong> Vault Service Fees charged by the Company (We need to define with who physical gold will be stored) to the Client, as further described in the FAQs on the website &ldquo;<strong>Fee Schedule</strong>&rdquo;.</li>
-</ul>
-<p><strong>1.5</strong> &nbsp;&ldquo;<strong>Digital Gold Coins</strong>&rdquo; means an electronic document of title to Physical Gold, denominated in Five-Gram Coins onwards.</p>
-<p><strong>1.6</strong> &nbsp;&ldquo;<strong>PDGC</strong>&rdquo; shall mean Pharma Digital Gold Coin, which is a part of PPGL.</p>
+<strong class="mt-2">1.2 Client Assets</strong>
+<div style="margin-left: 20px;">
+<p>
+means Physical Gold and corresponding Digital Gold Coins held in the Client&rsquo;s Account.</p>
+</div>
+<strong  class="mt-2">1.3 External Account</strong>
+<div style="margin-left: 20px;">
+<p>
+means any external financial account or other digital currency accounts, maintained by a third party outside of the Client&rsquo;s Account.</p>
+</div>
+<strong class="mt-2">1.4 Fees</strong>
+<div style="margin-left: 20px;">
+<p> means</p>
+</div>
+    <strong class="mt-2">1.4.1</strong>
+    <div style="margin-left: 20px;">
+    <p>any commission or other fees charged by the Company to the Client and</p>
+    </div>
+
+    <strong class="mt-2">1.4.2</strong>
+    <div style="margin-left: 20px;">
+        <p>any commission or other fees charged by the Company to the Client and</p>
+     </div>
+     <strong class="mt-2">1.5 Digital Gold Coins</strong>
+     <div style="margin-left: 20px;">
+        <p> means an electronic document of title to Physical Gold, denominated in Five-Gram Coins onwards.</p>
+     </div>
+     <strong class="mt-2">1.6 PDGC</strong>
+     <div style="margin-left: 20px;">
+     <p>
+        shall mean Pharma Digital Gold Coin, which is a part of PPGL.</p>
+     </div>
 <p><strong>1.7</strong> &nbsp;&ldquo;<strong>Network</strong>&rdquo; means the distributed ledger network on which transactions are effected and recorded on each individual&rsquo;s wallet.</p>
 <p><strong>1.8</strong> &ldquo;<strong>Personal Data</strong>&rdquo; means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.</p>
 <p><strong>1.9</strong> &nbsp;&ldquo;<strong>Responsible Gold Standard</strong>&rdquo; means &nbsp;the Company&rsquo;s standards for responsible sourcing and processing of physical gold.</p>
