@@ -26,9 +26,9 @@ p {
     <div class="container">
       <div class="row">
        <h3>VAULT TERMS</h3>
-<ul>
-<li>You hereinafter referred to as the Client agree and understand that by clicking to agree below, you are agreeing to enter into these vault services terms (hereinafter referred to as the &nbsp;&ldquo;Vault Terms&rdquo;) by and between you and Pharma Digital Gold Coins hereinafter referred to as the Company The Company hereby agrees to hold and store, in accordance with these Vault Terms, certain gold owned by the Client identified in the Client Account Agreement (hereinafter referred to as the "Agreement"). Capitalized terms defined in the&nbsp; Agreement are incorporated into these Vault Terms.</li>
-</ul>
+
+<p>You hereinafter referred to as the Client agree and understand that by clicking to agree below, you are agreeing to enter into these vault services terms (hereinafter referred to as the &nbsp;&ldquo;Vault Terms&rdquo;) by and between you and Pharma Digital Gold Coins hereinafter referred to as the Company The Company hereby agrees to hold and store, in accordance with these Vault Terms, certain gold owned by the Client identified in the Client Account Agreement (hereinafter referred to as the "Agreement"). Capitalized terms defined in the&nbsp; Agreement are incorporated into these Vault Terms.</p>
+
 <p>Whereas,</p>
 <p>The Parties are collectively referred hereto as "we", "our" "us" and &ldquo;you&rdquo;, &ldquo;your&rdquo; or &ldquo;user&rdquo; means you as a user of the Site.</p>
 <strong class="mt-2">1. SERVICES.</strong>
@@ -40,6 +40,7 @@ The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the fo
 <div style="margin-left: 20px;">
 <p>The Parties subject to Vault Terms and Agreement hereby agrees and acknowledges that anytime during the terms these Agreements if any confidential information is being disclosed to them then it is their duty to keep such information confidential only, and shall not disclose it to any third party.</p>
 <p>For this purpose the &ldquo;Confidential Information&rdquo; shall mean but to limited to any information that has been exclusively named as Confidential Information.</p>
+</div>
 </div>
 <strong class="mt-2">2. LOCATION.</strong>
 <div style="margin-left: 20px;">
@@ -70,7 +71,7 @@ The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the fo
 <div style="margin-left: 20px;">
 <p>Client may redeem Digital Gold Coins for the corresponding amount of Physical Gold pursuant to this Section. Hereby the Client agrees that all the payments shall be made in the form of legal tender such as, USD/GBP/Euro.</p>
 </div>
-<strong class="mt-2">7.1Redemption Requirements.</strong>
+<strong class="mt-2">7.1 Redemption Requirements.</strong>
 <div style="margin-left: 20px;">
 <p>The requirements for redemption orders are as follows:</p>
 <p>Client may submit a redemption request to the Company during the hours of operation, which are displayed on www.pharmadigitalgoldcoin.com between office hours 9:00 - 5:00PM PST;</p>
@@ -100,7 +101,7 @@ The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the fo
 <p>Client authorizes the Company to provide any data, including Client&rsquo;s Account data and data which Client provided to PPGL- Co and the Company as part of the identity verification process (herein after collectively referred as the, &ldquo;Client&rsquo;s Data&rdquo;), to third parties as and when required to:</p>
 <ol type="1">
 <li>provide the Vault Services, and;</li>
-<li>Comply with its legal and regulatory obligations, which may include providing Client&rsquo;s Data to law enforcement or regulators (as the case may be). &nbsp;the Company will comply&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with all applicable laws, including privacy and data protection laws, with respect to the processing of Client&rsquo;s Data.</li>
+<li>Comply with its legal and regulatory obligations, which may include providing Clients Data to law enforcement or regulators (as the case may be). &nbsp;the Company will comply with all applicable laws, including privacy and data protection laws, with respect to the processing of Client&rsquo;s Data.</li>
 </ol>
 </div>
 <strong class="mt-2">10. Term and Termination.</strong>
@@ -126,7 +127,7 @@ These Vault Terms have the same effective date as the Agreement and continue so 
 <strong class="mt-2">11.2 By the Company</strong>
 <div style="margin-left: 20px;">
 <p> The Company covenants to Client to act as a Reasonable and Prudent Operator in the performance of the Vault Services. &nbsp;the Company represents to Client that the Physical Gold</p>
-<ol type="11.2.">
+<ol type="1">
 <li>Shall be held in one or more allocated accounts with a Storage Provider in the Company&rsquo;s name for and behalf of Digital Gold Coins owners and</li>
 <li>Shall be segregated from gold held for &nbsp;any other parties &nbsp;&nbsp;&nbsp;that it will be comingled with Physical Gold that &nbsp;belongs to other Digital Gold Coins owners and affiliates of &nbsp;the Company or their respective financing institutions.</li>
 </ol>
@@ -163,15 +164,21 @@ These Vault Terms have the same effective date as the Agreement and continue so 
 </div>
 <strong class="mt-2">14. Indemnification</strong>
 <div style="margin-left: 20px;">
-<p>14.1 Notwithstanding the foregoing or anything to the contrary in the Agreement, Client agrees to defend, indemnify, and hold harmless the Company, and its respective employees, directors, agents, lessors and affiliates from and against any claim, suit, demand, loss, liability, damage, action, or proceeding arising out of &nbsp;or relating to</p>
+    <strong class="mt-2">14.1</strong>
+    <div style="margin-left: 20px;">
+<p>
+
+Notwithstanding the foregoing or anything to the contrary in the Agreement, Client agrees to defend, indemnify, and hold harmless the Company, and its respective employees, directors, agents, lessors and affiliates from and against any claim, suit, demand, loss, liability, damage, action, or proceeding arising out of &nbsp;or relating to</p>
 <ol type="1">
 <li> Client&rsquo;s breach of any provision of the Agreement or these Vault Terms.</li>
 <li>Client&rsquo;s use of the Vault Services.</li>
 <li>Client&rsquo;s obligations to pay fees or fines to the Company, financial services providers, or other third parties, (4) negligence or willful misconduct of Client&rsquo;s employees, contractors, or agents.</li>
 </ol>
+    </div>
 </div>
 <div style="margin-left: 20px;" class="mt-2">
-<p>14.2 Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
+<strong class="mt-2">14.2</strong>
+<p>Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
 </div>
 <strong class="mt-2">15. Liens.</strong>
     <div style="margin-left: 20px;" class="mt-2">
