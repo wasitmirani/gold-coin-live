@@ -166,7 +166,7 @@ These Vault Terms have the same effective date as the Agreement and continue so 
 <div style="margin-left: 20px;">
     <strong class="mt-2">14.1</strong>
     <div style="margin-left: 20px;">
-<p>
+
 
 Notwithstanding the foregoing or anything to the contrary in the Agreement, Client agrees to defend, indemnify, and hold harmless the Company, and its respective employees, directors, agents, lessors and affiliates from and against any claim, suit, demand, loss, liability, damage, action, or proceeding arising out of &nbsp;or relating to</p>
 <ol type="1">
@@ -178,7 +178,9 @@ Notwithstanding the foregoing or anything to the contrary in the Agreement, Clie
 </div>
 <div style="margin-left: 20px;" class="mt-2">
 <strong class="mt-2">14.2</strong>
+<div style="margin-left: 20px;" class="mt-2">
 <p>Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
+</div>
 </div>
 <strong class="mt-2">15. Liens.</strong>
     <div style="margin-left: 20px;" class="mt-2">
