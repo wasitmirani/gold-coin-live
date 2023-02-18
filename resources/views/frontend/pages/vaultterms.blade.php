@@ -35,7 +35,7 @@ p {
 <div style="margin-left: 20px;">
 <p>
 The Company &nbsp;&nbsp;shall provide, in accordance with the Vault Terms the following services including and limited to vaulting, storage, handling and delivery, on behalf of the Client for the amount equivalent to the Physical Gold corresponding to the Digital Gold Coins held in Client&rsquo;s Account during the term of this Agreement (hereinafter referred to as the &ldquo;Vault Services&rdquo;).</p>
-
+</div>
 <strong class="mt-2">1.1&nbsp; Confidentiality</strong>
 <div style="margin-left: 20px;">
 <p>The Parties subject to Vault Terms and Agreement hereby agrees and acknowledges that anytime during the terms these Agreements if any confidential information is being disclosed to them then it is their duty to keep such information confidential only, and shall not disclose it to any third party.</p>
@@ -162,9 +162,10 @@ These Vault Terms have the same effective date as the Agreement and continue so 
 <li>not use Client&rsquo;s Account or the Vault Services for illegal transactions or those involving any person listed on the United Kingdom, European Union, United Nations, Switzerland, Luxembourg, U.S. Department of Treasury, Office of Foreign Assets Control, Specially Designated Nationals and Blocked Persons List (available at www.treas.gov/ofac) or the U.S. Department of State&rsquo;s Terrorist Exclusion List (available at www.state.gov) and other laws enforced by the Office of Foreign Assets Control or in connection with illegal activity of any kind.</li>
 </ol>
 </div>
-<strong class="mt-2">14. Indemnification</strong>
-<div style="margin-left: 20px;">
+<strong class="mt-2">14. Indemnification</strong><br>
+
     <strong class="mt-2">14.1</strong>
+
     <div style="margin-left: 20px;">
 
 
@@ -174,14 +175,14 @@ Notwithstanding the foregoing or anything to the contrary in the Agreement, Clie
 <li>Client&rsquo;s use of the Vault Services.</li>
 <li>Client&rsquo;s obligations to pay fees or fines to the Company, financial services providers, or other third parties, (4) negligence or willful misconduct of Client&rsquo;s employees, contractors, or agents.</li>
 </ol>
-    </div>
+
 </div>
-<div style="margin-left: 20px;" class="mt-2">
+
 <strong class="mt-2">14.2</strong>
 <div style="margin-left: 20px;" class="mt-2">
 <p>Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p>
 </div>
-</div>
+
 <strong class="mt-2">15. Liens.</strong>
     <div style="margin-left: 20px;" class="mt-2">
 <p>&nbsp;The Company shall not create any liens, security interests or encumbrances of any kind or nature over the Physical Gold, nor shall it loan the Physical Gold; provided, Client recognizes that each Storage Provider will have a warehouseman&rsquo;s lien over the Physical Gold to enforce payment of any fees or other sums that the Company must pay pursuant to an applicable storage agreement.</p>
