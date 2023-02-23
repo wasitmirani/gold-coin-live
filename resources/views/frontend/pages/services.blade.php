@@ -22,7 +22,7 @@
             <div class="fugu-iconbox-data">
               <h4>Safe & Secure</h4>
               <p>We offer you an opportunity to protect the value of your money safely and securely..</p>
-              <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="fugu-iconbox-data">
               <h4>Convenient Buying</h4>
               <p>Our buying and spending process is extremely simple and accessible. We aim to please.</p>
-              <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
             <div class="fugu-iconbox-data">
               <h4>Earn & Save</h4>
               <p>Earn yearly profits and save on the discounts we offer on the much needed medical services.</p>
-              <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <h4>
                 The Smart Investment</h4>
               <p>Cash is losing value every day. Crypto is far too unstable and risky. Gold is the best and only option.</p>
-              <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
             <div class="fugu-iconbox-data">
               <h4>Digital Pharmacy</h4>
               <p>Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Quisque velit nisi pretium lacinia in elementum id enim</p>
-              <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
             <div class="fugu-iconbox-data">
               <h4>Mental Health</h4>
               <p>Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Quisque velit nisi pretium lacinia in elementum id enim</p>
-              <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
             </div>
           </div>
         </div>

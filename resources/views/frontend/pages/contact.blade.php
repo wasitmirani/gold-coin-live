@@ -24,7 +24,7 @@
                       <p>+44 7776 398036
                       <br>+971 50 624 9964
                       </p>
-                     
+
                     </a>
                   </li>
                   <li>
@@ -42,7 +42,7 @@
                         <img src="http://pharmadigitalgoldcoin.com/assets/images/social/map.svg" alt="">
                       </div>
                       <h5>Office address</h5>
-                      <p>Office address is
+                      <p>
   18 Dalston Gardens
   Victoria House
   HA7 1BU</p>

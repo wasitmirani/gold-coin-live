@@ -121,7 +121,7 @@
         </button>
       </form>
       <p class="text-center">
-        <span>New on our platform?</span>
+        {{-- <span>New on our platform?</span> --}}
         {{-- <a href="auth-register-cover.html">
           <span>Create an account</span>
         </a> --}}
