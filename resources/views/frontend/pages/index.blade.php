@@ -144,9 +144,9 @@ a{
       <div class="row">
         <div class="col-xl-9 col-lg-9">
           <div class="fugu-hero-content">
-            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Pharma Park Global  </h2>
+            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Pharma Park Global Now Introduces Its First Digital Gold Coin </h2>
 
-            <p class="wow fadeInUpX goldheading" data-wow-delay="0.25s">Now Introduces Its First Digital Gold Coin</p>
+            {{-- <p class="wow fadeInUpX goldheading" data-wow-delay="0.25s"></p> --}}
 
           </div>
         </div>
