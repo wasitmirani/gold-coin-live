@@ -34,7 +34,7 @@
   font-size:30px;
   font-weight:bold;
   text-decoration:none;
-  color:#fff; 
+  color:#fff;
 }
 
 .video-container {
@@ -50,8 +50,8 @@ left:0;
 #video-bg{
   width:100%;
 /*height: 100%;*/
-  
- 
+
+
 }
 @media only screen and (max-width: 749px) {
   /* For mobile phones: */
@@ -59,8 +59,8 @@ left:0;
  width: 300%;
      max-width: 1000px;
   height:auto;
-  
- 
+
+
 }
 }
 .portfolio-section{
@@ -105,7 +105,7 @@ font-family:Arial;
 }
 a{
   text-decoration: none  !important;
-  
+
 }
 
 .goldheading {
@@ -114,17 +114,17 @@ a{
     text-shadow: 1px 1px 2px black, 0 0 25px #fac840, 0 0 5px darkblue;
     color: #fac840 !important;
 }
-    
-    
+
+
     .site-menu-main .nav-link-item {
     color: #fac840 !important;
     text-shadow: 1px 1px 2px black, 0 0 25px #fac840, 0 0 5px darkblue;
 }
-    
+
     .fugu-btn.fugu-header-btn {
     padding: 11px 33px;
     margin-left: 40px;
-    
+
     color: #fac840 !important;
     background-color: transparent;
     border: 2px solid #fac840 !important;
@@ -133,15 +133,13 @@ a{
 @section('content')
 
 <div class="fugu-hero-section">
-     <div class="video-container embed-responsive embed-responsive-16by9" > 
-      <video autoplay loop muted    id="video-bg">
+     <div class="video-container embed-responsive embed-responsive-16by9" >
 
-        <source src="{{asset('/assets/testvideo.mp4')}}" type="video/mp4">
+     <img src="{{asset('assets/images/banner.jpg')}}" style="width:100%;" alt="" srcset="">
 
-      </video>
     </div>
     <div class="container">
-           
+
 
       <div class="row">
         <div class="col-xl-9 col-lg-9">
@@ -150,7 +148,7 @@ a{
             <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Guard Your Health </h2>
 
             <p class="wow fadeInUpX goldheading" data-wow-delay="0.25s">The Ultimate Solution Against Inflation & Expensive Medical Services.</p>
-           
+
           </div>
         </div>
       </div>
@@ -159,7 +157,7 @@ a{
       <img src="{{asset('assets/images/shape/shape1.png')}}" alt="">
     </div>
     </div>
- 
+
   <!-- End hero section -->
 
   <!--<div class="fugu-client-section bg-gray-800">-->
@@ -297,7 +295,7 @@ a{
   @component('frontend.components.pricing')
 
   @endcomponent
-  
+
   <!-- End section -->
 
   <div class="section bg-warning-600 fugu-section-padding">
