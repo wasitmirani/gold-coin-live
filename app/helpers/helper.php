@@ -64,9 +64,7 @@ function goldRates(){
 
 function getCountry(){
     $ip = request()->ip();
-    if($ip="127.0.0.1"){
-        $ip = "2400:adc1:47d:5201:e839:6b69:a318:39ec";
-    }
+   
 
     $geo = unserialize(file_get_contents("http://ip-api.com/php/" . $ip));
 
