@@ -71,7 +71,16 @@
                     Dashboard
                   </a>
                 @endif
+                <a class="fugu-btn fugu-header-btn mt-2" href="#">
+                <img src="{{asset('assets/images/global.png')}}" alt="" srcset="">
+                <strong style="color:#fac840;margin-left: 5px;" >
+
+                {{getCountry()}}
+                </strong>
+                </a>
+
               </div>
+
             </ul>
           </nav>
 
