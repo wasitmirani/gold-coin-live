@@ -142,7 +142,7 @@ a{
 
 
       <div class="row">
-        <div class="col-xl-9 col-lg-9">
+        <div class="col-xl-12 col-lg-12">
           <div class="fugu-hero-content">
             <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Pharma Park Global Now Introduces Its First Digital Gold Coin </h2>
 
