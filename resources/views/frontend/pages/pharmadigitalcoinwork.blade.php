@@ -121,8 +121,7 @@ color: white;
         <p class="para">Pharma Digital Gold Coin makes investing in gold quite accessible by offering fractional coins. Such as, investors can accumulate gold in small amounts and manage their holdings in real time, as well as they can use it for medical treatment purposes. The physical gold is held in a reputed third-party vault controlled by Dhahabu International Refinery.</p>
         <p class="para">One Pharma Digital Gold Coin is (5) five Grams of gold, with a minimum purchase amount (as per then prevailing current market price).</p>
         <p class="para">The Pharma Digital Gold Coin can be stored and transferred much like any other Digital Currency.</p>
-        <p class="para">Pharma Digital Gold Coin requires a minimum purchase of 5 (five) Grams of gold for Pharma Digital</p>
-        <p class="para">Gold Coin and does not have any maximum limit.</p>
+        <p class="para">Pharma Digital Gold Coin requires a minimum purchase of 5 (five) Grams of gold for Pharma Digital Gold Coin and does not have any maximum limit.</p>
         <p class="para">What are some benefits of investing in Gold-backed Digital coins?</p>
         <p class="para">The major advantage of investing in Gold-backed Digital Gold Coins is that, unlike physical gold, they are in digital form and can be divided into small parts, which makes them conveniently transportable, easily transferable, and relatively more affordable.</p>
         <p class="para">Another key benefit is that since Gold-backed Digital Gold Coins are pegged to the price of gold, they will maintain their value even if the value of Cryptocurrencies or Stocks is crashing. This makes them a good investment option during volatile periods in the market.</p>

@@ -129,17 +129,22 @@ a{
     background-color: transparent;
     border: 2px solid #fac840 !important;
 }
+
 </style>
 @section('content')
 
 <div class="fugu-hero-section">
      <div class="video-container embed-responsive embed-responsive-16by9" >
 
-      <video autoplay loop muted    id="video-bg">
+      <video controls="true" autoplay="true"id="video-bg">
 
         <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
-
+                <source src="{{asset('/assets/images/video.mp4')}}" type="video/ogg">
       </video>
+
+
+
+
     </div>
     {{-- <div class="container">
 
@@ -305,14 +310,10 @@ a{
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1 order-lg-2">
-          <div class="fugu-video-thumb wow fadeInUpX" data-wow-delay=".20s">
-            <img src="{{asset('assets/images/all-img/about/sample2.png')}}" style="border-radius: 25px;opacity: 0.8;filter: drop-shadow(8px 6px 8px #222);" alt="">
-            <a class="fugu-popup" href="{{asset('/assets/home.mp4')}}">
-              <img src="{{asset('assets/images/all-img/video-btn.png')}}" alt="">
-              <div class="fugu-play-btn">
-                <img src="{{asset('assets/images/all-img/play-btn.png')}}" alt="">
-              </div>
-            </a>
+            <div class="fugu-video-thumb wow fadeInUpX" data-wow-delay=".20s">
+            <video width="100%" autoplay muted id="videoplay">
+                <source src="{{asset('/assets/home.mp4')}}" type="video/mp4">
+              </video>
           </div>
         </div>
         <div class="col-lg-5 col-md-10 d-flex align-items-center">
@@ -535,4 +536,12 @@ This wallet gold can be then used to pay for medical services from medical insti
   <div class="fugu-go-top">
     <img src="{{asset('assets/images/svg/arrow-black-right.svg')}}" alt="">
   </div>
+  <script>
+
+//   var video = document.querySelector('video');
+// video.muted = false;
+// video.play()
+
+
+  </script>
 @endsection

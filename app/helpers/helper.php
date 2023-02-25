@@ -64,10 +64,16 @@ function goldRates(){
 }
 
 function getCountry(){
+try {
     $ip = request()->ip();
 
 
     $geo = unserialize(file_get_contents("http://ip-api.com/php/" . $ip));
+    //code...
+} catch (\Throwable $th) {
+    //throw $th;
+}
+
 
     return $geo['country'] ?? "N/A";
 }
