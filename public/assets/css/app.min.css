@@ -4637,12 +4637,14 @@ a.fugu--readmore-btn span:before {
 @media (max-width:991px) {
     .fugu-hero-section {
         /* padding: 170px 0 0 */
+        padding: 0px 0 251px;
     }
 }
 
 @media (max-width:767px) {
     .fugu-hero-section {
         /* padding: 120px 0 0 */
+        padding: 0px 0 251px;
     }
 }
 

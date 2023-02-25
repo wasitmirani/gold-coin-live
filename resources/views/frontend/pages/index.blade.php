@@ -57,7 +57,7 @@ left:0;
   /* For mobile phones: */
  #video-bg{
  width: 100%;
-     max-width: 1000px;
+     max-width: 100%;
   height:auto;
 
 
