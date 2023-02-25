@@ -23,7 +23,7 @@
             </div>
             <ul class="site-menu-main">
                 <li class="nav-item nav-item-has-children">
-                    <a href="{{ url('/') }}" class="nav-link-item {{ Request::routeIs('home') ? 'active' : '' }}">Home </a>
+                    <a href="{{url('/') }}" class="nav-link-item {{ Request::routeIs('home') ? 'active' : '' }}">Home </a>
                 </li>
                 <!--<li class="nav-item nav-item-has-children">-->
                 <!--    <a href="{{ route('about') }}" class="nav-link-item ">About </a>-->

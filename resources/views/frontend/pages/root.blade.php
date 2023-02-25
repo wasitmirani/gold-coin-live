@@ -12,6 +12,7 @@
 
 </style>
 @section('content')
+
 @component('frontend.components.breadcrumb',['active'=>'About us'])
 
 @endcomponent
@@ -130,7 +131,8 @@ Take a step in the right direction by becoming a member of our organization toda
       <img src="{{asset('assets/images/shape/shape2.png')}}" alt="">
     </div>
   </div>
+<script>
+ window.location = "{{route('home')}}";
 
- 
-
+</script>
 @endsection

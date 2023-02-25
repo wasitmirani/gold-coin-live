@@ -136,7 +136,7 @@ a{
 <div class="fugu-hero-section">
      <div class="video-container embed-responsive embed-responsive-16by9" >
 
-      <video controls="true" autoplay="true" id="video-bg">
+      <video autoplay muted controls  id="myVideo">
 
         <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
                 <source src="{{asset('/assets/images/video.mp4')}}" type="video/ogg">
@@ -311,7 +311,7 @@ a{
       <div class="row">
         <div class="col-lg-6 offset-lg-1 order-lg-2">
             <div class="fugu-video-thumb wow fadeInUpX" data-wow-delay=".20s">
-            <video width="100%" autoplay muted id="videoplay">
+            <video width="100%" autoplay muted >
                 <source src="{{asset('/assets/home.mp4')}}" type="video/mp4">
               </video>
           </div>
@@ -536,11 +536,17 @@ This wallet gold can be then used to pay for medical services from medical insti
   <div class="fugu-go-top">
     <img src="{{asset('assets/images/svg/arrow-black-right.svg')}}" alt="">
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script>
 
-//   var video = document.querySelector('video');
-// video.muted = false;
-// video.play()
+
+const videoEl = document.getElementById('myVideo');
+videoEl.muted=false;
+videoEl.volume = 1;
+
+
+
+
 
 
   </script>

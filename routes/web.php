@@ -23,6 +23,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 require __DIR__.'/auth.php';
 
+
 Route::get('/',[FrontendController::class, 'index'])->name('home');
 Route::get('about',[FrontendController::class, 'about'])->name('about');
 Route::get('contact',[FrontendController::class, 'contact'])->name('contact');
