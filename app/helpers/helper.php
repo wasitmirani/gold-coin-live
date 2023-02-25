@@ -7,6 +7,7 @@ use App\Models\Setting;
 use App\Models\GoldRate;
 use Illuminate\Support\Str;
 use App\helpers\HelperComponent;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -64,13 +65,19 @@ function goldRates(){
 
 function getCountry(){
     $ip = request()->ip();
-   
+
 
     $geo = unserialize(file_get_contents("http://ip-api.com/php/" . $ip));
 
     return $geo['country'] ?? "N/A";
 }
 
+function getCountries(){
+ $countries=   DB::table('countries')->get();
+
+ return $countries;
+
+}
 function getLayoutColors(){
    $setting= Setting::where('user_id',auth()->user()->id)->first();
    if(!empty($setting)){

@@ -56,7 +56,7 @@ left:0;
 @media only screen and (max-width: 749px) {
   /* For mobile phones: */
  #video-bg{
- width: 300%;
+ width: 100%;
      max-width: 1000px;
   height:auto;
 
@@ -135,23 +135,27 @@ a{
 <div class="fugu-hero-section">
      <div class="video-container embed-responsive embed-responsive-16by9" >
 
-     <img src="{{asset('assets/images/banner.jpg')}}" style="width:100%;" alt="" srcset="">
+      <video autoplay loop muted    id="video-bg">
 
+        <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
+
+      </video>
     </div>
-    <div class="container">
+    {{-- <div class="container">
 
 
       <div class="row">
-        <div class="col-xl-12 col-lg-12">
+        <div class="col-xl-9 col-lg-9">
           <div class="fugu-hero-content">
-            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Pharma Park Global Now Introduces Its First Digital Gold Coin </h2>
+            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Guard Your Wealth  </h2>
+            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Guard Your Health </h2>
 
-            {{-- <p class="wow fadeInUpX goldheading" data-wow-delay="0.25s"></p> --}}
+            <p class="wow fadeInUpX goldheading" data-wow-delay="0.25s">The Ultimate Solution Against Inflation & Expensive Medical Services.</p>
 
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <div class="fugu-shape1">
       <img src="{{asset('assets/images/shape/shape1.png')}}" alt="">
     </div>

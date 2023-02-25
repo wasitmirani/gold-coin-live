@@ -74,6 +74,22 @@ input[type="radio"] {
                         <input type="text" name="zip" required  value="{{Auth::user()->zip}}" placeholder="Enter your zip">
                       </div>
                       <div class="fugu-input-field">
+                        <label>Country *</label>
+                        @php
+                            $countries=   getCountries();
+                        @endphp
+                          <select class="form-select" name="country" aria-label="Default select example">
+                            <option selected>Select Country</option>
+                            @foreach ($countries as $item)
+                            <option value="{{$item->country_name}}">{{ $item->country_name}}</option>
+                            @endforeach
+
+                            </select>
+
+                      </div>
+
+
+                      <div class="fugu-input-field">
                         <label>Write your message</label>
                         <textarea name="message" placeholder="Write us your question here..."></textarea>
                       </div>

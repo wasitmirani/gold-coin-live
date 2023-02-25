@@ -64,30 +64,30 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        {{-- <div class="col-lg-6">
           <div class="fugu-iconbox-wrap fugu-iconbox-wrap5 wow fadeInUpX" data-wow-delay=".40s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUpX;">
             <div class="fugu-iconbox-icon">
-              {{--  <img src="{{asset('assets/images/all-img/icon5.png')}}" alt="">  --}}
+                <img src="{{asset('assets/images/all-img/icon5.png')}}" alt="">  
             </div>
             <div class="fugu-iconbox-data">
               <h4>Digital Pharmacy</h4>
               <p>Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Quisque velit nisi pretium lacinia in elementum id enim</p>
-              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6">
+        </div> --}}
+        {{-- <div class="col-lg-6">
           <div class="fugu-iconbox-wrap fugu-iconbox-wrap5 wow fadeInUpX" data-wow-delay=".50s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUpX;">
             <div class="fugu-iconbox-icon">
-              {{--  <img src="{{asset('assets/images/all-img/icon6.png')}}" alt="">  --}}
+              {{--  <img src="{{asset('assets/images/all-img/icon6.png')}}" alt="">
             </div>
             <div class="fugu-iconbox-data">
               <h4>Mental Health</h4>
               <p>Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Quisque velit nisi pretium lacinia in elementum id enim</p>
-              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a> --}}
+              {{-- <a class="fugu-icon-btn" href="#">Discover More <img src="{{asset('assets/images/svg/arrow-black-right-1.svg')}}" alt=""></a>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
   </div>

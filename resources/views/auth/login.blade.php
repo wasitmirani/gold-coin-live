@@ -121,10 +121,10 @@
         </button>
       </form>
       <p class="text-center">
-        {{-- <span>New on our platform?</span> --}}
-        {{-- <a href="auth-register-cover.html">
+        <span>New on our platform?</span>
+        <a href="{{route('register')}}">
           <span>Create an account</span>
-        </a> --}}
+        </a>
       </p>
 
       <div class="divider my-4">

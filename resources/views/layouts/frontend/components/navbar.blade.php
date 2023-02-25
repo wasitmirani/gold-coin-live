@@ -73,7 +73,7 @@
                 @endif
                 <a class="fugu-btn fugu-header-btn mt-2" href="#">
                 <img src="{{asset('assets/images/global.png')}}" alt="" srcset="">
-                <strong style="color:#fac840;margin-left: 5px;" >
+                <strong style="color:#ffffff !important;margin-left: 5px;" >
 
                 {{getCountry()}}
                 </strong>
@@ -98,7 +98,7 @@
         </div>
         <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex" style="padding: 10px;">
                 <img src="{{asset('assets/images/global.png')}}" alt="" srcset="">
-                <strong style="color:#fac840;margin-left: 5px;" >
+                <strong style="color:#ffffff;margin-left: 5px;" >
 
                 {{getCountry()}}
                 </strong>

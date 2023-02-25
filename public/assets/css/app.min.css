@@ -42,7 +42,7 @@ html {
 
 body {
     height: 100%;
-    color: rgba(19, 17, 26, .8); 
+    color: rgba(19, 17, 26, .8);
     font-family: "Candara" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -4630,19 +4630,19 @@ a.fugu--readmore-btn span:before {
     z-index: 0;
     overflow: hidden;
     position: relative;
-    padding: 210px 0 130px;
+    padding: 210px 0 366px;
     background-color: var(--warning-400)
 }
 
 @media (max-width:991px) {
     .fugu-hero-section {
-        padding: 170px 0 0
+        /* padding: 170px 0 0 */
     }
 }
 
 @media (max-width:767px) {
     .fugu-hero-section {
-        padding: 120px 0 0
+        /* padding: 120px 0 0 */
     }
 }
 
