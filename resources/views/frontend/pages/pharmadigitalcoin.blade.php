@@ -73,34 +73,38 @@
 <div class="section bg-warning-600 fugu-section-padding">
     <div class="container">
 
+            <div class="row">
+                <div class="col-lg-6 col-md-10 d-flex">
 
-            <div class="pos mt-1" id="_136:555">
-            <span id="_17.5" style="font-weight:bold; font-family:Arial; font-size:17.5px; color:#000000">
-            What is PHARMA DIGITAL GOLD COIN?</span>
+                    <div class="pos" id="_136:596" style="top:596;">
+                        <span id="_17.5" style="font-weight:bold; font-family:Arial; font-size:17.5px; color:#000000">
+                            What is PHARMA DIGITAL GOLD COIN?</span>
+                    <p id="_14.8" style=" font-family:Arial; font-size:14.8px; color:#000000">
+                    A Gold-backed Digital Gold Coin is a type of digital currency that is backed by physical
+                    gold. The currency&#146;s value is determined on the basis of the current market price of gold
+                    and can be used for transactions for Medical purposes as it is a Pharma-based coin
+                    Digital Gold Coin <span style="font-weight:normal"> is backed by gold to tie the derivative asset i.e., Gold Coin to a tangible
+                        asset i.e, Gold thereby preventing excessive fluctuations in price. The Gold backed Digital is digitally more secure than other digital currencies because the price of gold
+
+                        is  generally  less  volatile than  the  prices  of  other  digital  assets,  such  as  stocks  or cryptocurrencies.
+                    </p>
+                    <p id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+                        The Gold-backed Digital Gold Coins can also be used as a hedge against inflation. If the
+                        price of gold rises, the value of the Digital Gold Coin will also increase accordingly. This will
+                        protect investors from losing money if the price of other assets, such as stocks, were to
+                        fall.
+                        People who invest in Gold-backed Digital coins enjoy increased returns from the pricing of gold.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-10 ">
+                    <video width="100%" autoplay muted id="videoplay">
+                        <source src="{{asset('/assets/home.mp4')}}" type="video/mp4">
+                      </video>
+                </div>
             </div>
-            <div class="pos" id="_136:596" style="top:596;">
-            <p id="_14.8" style=" font-family:Arial; font-size:14.8px; color:#000000">
-            A Gold-backed Digital Gold Coin is a type of digital currency that is backed by physical
-            gold. The currency&#146;s value is determined on the basis of the current market price of gold
-            and can be used for transactions for Medical purposes as it is a Pharma-based coin
-            Digital Gold Coin <span style="font-weight:normal"> is backed by gold to tie the derivative asset i.e., Gold Coin to a tangible
-                asset i.e, Gold thereby preventing excessive fluctuations in price. The Gold backed Digital is digitally more secure than other digital currencies because the price of gold
 
-                is  generally  less  volatile than  the  prices  of  other  digital  assets,  such  as  stocks  or cryptocurrencies.
-            </p>
-            </div>
-
-
-
-            <div class="pos" id="_136:727" style="top:727;">
-            <p id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
-                The Gold-backed Digital Gold Coins can also be used as a hedge against inflation. If the
-                price of gold rises, the value of the Digital Gold Coin will also increase accordingly. This will
-                protect investors from losing money if the price of other assets, such as stocks, were to
-                fall.
-                People who invest in Gold-backed Digital coins enjoy increased returns from the pricing of gold.
-            </p>
-            </div>
     </div>
 </div>
 

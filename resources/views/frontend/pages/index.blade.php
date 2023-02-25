@@ -136,7 +136,7 @@ a{
 <div class="fugu-hero-section">
      <div class="video-container embed-responsive embed-responsive-16by9" >
 
-      <video controls="true" autoplay="true"id="video-bg">
+      <video controls="true" autoplay="true" id="video-bg">
 
         <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
                 <source src="{{asset('/assets/images/video.mp4')}}" type="video/ogg">
