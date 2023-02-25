@@ -136,7 +136,7 @@ a{
 <div class="fugu-hero-section">
      <div class="video-container embed-responsive embed-responsive-16by9" >
 
-      <video autoplay muted loop   id="video-bg">
+      <video autoplay muted   id="video-bg">
 
         <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
         <source src="{{asset('/assets/images/video.mp4')}}" type="video/ogg">
@@ -543,7 +543,7 @@ const videoEl = document.getElementById('video-bg');
 // videoEl.controls=true;
 
 // videoEl.volume = 1;
-
+// videoEl.muted=false;
 // videoEl.play();
 // videoEl.pause();
 
