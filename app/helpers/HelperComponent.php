@@ -161,21 +161,21 @@ class HelperComponent
             ],
 
             [
-                "title" => 'Transitions',
-                'can' => 'transitions-dropdown',
+                "title" => 'transaction',
+                'can' => 'transactions-dropdown',
                 "icon" => "ti-cash-banknote",
                 'type' => 'multi',
                 "sub_menu" => [
                     setSubMenu(
-                        "My Transitions",
+                        "My Transactions",
                         null,
-                        "transitions-view",
+                        "transaction-view",
                         "/my-transitions"
                     ),
                     setSubMenu(
-                        "Transitions",
+                        "Transactions",
                         null,
-                        "Transitions",
+                        "transactions",
                         "/transitions",
                     ),
                 ]

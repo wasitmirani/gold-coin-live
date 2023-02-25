@@ -7,8 +7,8 @@
                     <div class="d-flex align-items-end row">
                         <div class="col-7">
                             <div class="card-body text-nowrap">
-                                <h5 class="card-title mb-0">Hi, {{user?.name}}! 👋</h5>
-                                <p class="mb-2">welcome to pharma digital goldcoin</p>
+                                <h5 class="card-title mb-0">Hi, {{auth?.name}}! 👋</h5>
+                                <p class="mb-2">welcome to Pharma Digital Gold Coin</p>
                                 <!-- <h4 class="text-primary mb-1">$48.9k</h4> -->
                                 <!-- <router-link to='my-transitions' class="btn btn-primary">View Sales</router-link> -->
                             </div>
@@ -19,7 +19,7 @@
             </div>
             <!-- View sales -->
 
-       
+
 
 
         </div>
@@ -31,7 +31,7 @@ export default {
     components:{ PaymentChart},
     data(){
       return {
-        user:{name:"Wasit",email:"test@example.com"},
+        auth:user,
         analytics: {},
         payment_chart_date: [],
         payment_chart_sales: [],

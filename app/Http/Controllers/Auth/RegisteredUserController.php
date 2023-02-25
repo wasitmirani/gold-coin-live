@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use App\Models\User;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules;
+use Illuminate\Auth\Events\Registered;
+use App\Providers\RouteServiceProvider;
 
 class RegisteredUserController extends Controller
 {
@@ -33,29 +35,42 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+    try{
+        DB::beginTransaction();
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'uid'=>Str::uuid(),
             'password' => Hash::make($request->password),
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
-        try {
-            //code...
-            $user->assignRole('customer');
-        } catch (\Throwable $th) {
-            //throw $th;
-        }
+        $user=auth()->user();
+        $token = auth()->user()->createToken((string)Str::uuid())->plainTextToken;
+        $user->token=$token;
+        $user->last_login=Date('Y-m-d H:i:s');
+        $user->save();
+        $user->assignRole('customer');
+        session(['login' => true]);
 
 
+        DB::commit();
+        // all good
+    } catch (\Exception $e) {
+        DB::rollback();
+        // something went wrong
+        return $e->getMessage();
+    }
         return redirect(RouteServiceProvider::HOME);
     }
 }
