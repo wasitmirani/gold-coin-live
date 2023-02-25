@@ -73,7 +73,7 @@
                 @endif
                 <a class="fugu-btn fugu-header-btn mt-2" href="#">
                 <img src="{{asset('assets/images/global.png')}}" alt="" srcset="">
-                <strong style="color:#ffffff !important;margin-left: 5px;" >
+                <strong style="color:#000000 !important;margin-left: 5px;" >
 
                 {{getCountry()}}
                 </strong>
