@@ -9,7 +9,14 @@
         </div>
         <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <!-- Search -->
-
+            <div class="navbar-nav align-items-center">
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a class="btn btn-primary waves-effect waves-light " @click="goPricing">
+                    Purchase Gold
+                  </a>
+               
+                </div>
+              </div>
             <!-- /Search -->
             <ul class="navbar-nav flex-row align-items-center ms-auto">
 
@@ -333,7 +340,11 @@
                 loading: false,
             }
         },
+        
         methods: {
+            goPricing(){
+                window.location.href = window.location.origin + "/plans-pricing";
+            },
             logout() {
             window.location.href = window.location.origin + "/logout";
             },

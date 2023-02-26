@@ -20,11 +20,16 @@ function sideBarMenu(){
 }
 
 function getGoldApi(){
-
-    $response = Http::get('https://api.metalpriceapi.com/v1/latest?api_key=79fb1cdff580076cff110658bd153dcb&base=USD&currencies=EUR,XAU,XAG');
-    $data=json_decode($response->body(),true);
-    $data=collect($data['rates']);
-    return isset($data['XAU'])  ? $data['XAU'] : null;
+    try {
+        //code...
+        $response = Http::get('https://api.metalpriceapi.com/v1/latest?api_key=79fb1cdff580076cff110658bd153dcb&base=USD&currencies=EUR,XAU,XAG');
+        $data=json_decode($response->body(),true);
+        $data=collect($data['rates']);
+        return isset($data['XAU'])  ? $data['XAU'] : null;
+    } catch (\Throwable $th) {
+        //throw $th;
+    }
+ 
 }
 
 
