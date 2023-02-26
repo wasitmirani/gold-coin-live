@@ -57,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
       var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
       this.page_num = page;
       console.log("page=", page);
-      axios.get('/transitions?page=' + page + "&per_page=" + this.per_page).then(function (res) {
+      axios.get('/transactions?page=' + page + "&per_page=" + this.per_page).then(function (res) {
         _this.transitions = [];
       });
     }

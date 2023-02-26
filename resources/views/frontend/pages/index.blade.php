@@ -311,7 +311,7 @@ a{
         <div class="col-lg-6 offset-lg-1 order-lg-2">
             <div class="fugu-video-thumb wow fadeInUpX" data-wow-delay=".20s">
             <video width="100%" autoplay muted >
-                <source src="{{asset('/assets/home.mp4')}}" type="video/mp4">
+                <source src="{{asset('/assets/testvideo.mp4')}}" type="video/mp4">
               </video>
           </div>
         </div>

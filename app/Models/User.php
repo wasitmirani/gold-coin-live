@@ -80,6 +80,6 @@ class User extends Authenticatable
      */
     public function wallet()
     {
-        return $this->belongsTo(Wallet::class, 'user_id', 'id');
+        return $this->belongsTo(Wallet::class, 'id', 'user_id');
     }
 }

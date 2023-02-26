@@ -100,12 +100,18 @@
 
                 <div class="col-lg-6 col-md-10 ">
                     <video width="100%" autoplay muted id="videoplay">
-                        <source src="{{asset('/assets/home.mp4')}}" type="video/mp4">
+                        <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
                       </video>
                 </div>
             </div>
 
     </div>
 </div>
+<script>
+
+document.addEventListener('click', function() {
+  document.getElementById('videoplay').muted = false;
+});
+</script>
 
 @endsection

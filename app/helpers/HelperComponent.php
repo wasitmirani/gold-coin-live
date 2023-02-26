@@ -169,14 +169,14 @@ class HelperComponent
                     setSubMenu(
                         "My Transactions",
                         null,
-                        "transaction-view",
-                        "/my-transitions"
+                        "my-transactions-view",
+                        "/my-transactions"
                     ),
                     setSubMenu(
                         "Transactions",
                         null,
-                        "transactions",
-                        "/transitions",
+                        "transactions-view",
+                        "/transactions",
                     ),
                 ]
 

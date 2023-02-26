@@ -25,7 +25,7 @@
                               </div>
                           <div class="d-flex flex-column">
                               <a style="margin-left: 10px;
-                              margin-top: 9px;" role="button"  @click="editItem(transition)" class="transition_name text-truncate text-body">
+                              margin-top: 9px;" role="button"  class="transition_name text-truncate text-body">
                                 <span class="fw-bolder">{{transition?.slug}}</span>
                                 </a>
                             </div></div>

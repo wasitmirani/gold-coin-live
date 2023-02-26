@@ -10,7 +10,7 @@
                                 <h5 class="card-title mb-0">Hi, {{auth?.name}}! 👋</h5>
                                 <p class="mb-2">welcome to Pharma Digital Gold Coin</p>
                                 <!-- <h4 class="text-primary mb-1">$48.9k</h4> -->
-                                <!-- <router-link to='my-transitions' class="btn btn-primary">View Sales</router-link> -->
+                                <!-- <router-link to='my-transactions' class="btn btn-primary">View Sales</router-link> -->
                             </div>
                         </div>
 

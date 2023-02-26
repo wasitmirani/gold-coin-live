@@ -1,20 +1,21 @@
 <?php
 
-use App\Http\Controllers\backend\api\hospital\HospitalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\backend\api\WalletController;
 use App\Http\Controllers\backend\api\role\RoleController;
 use App\Http\Controllers\backend\api\user\UserController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\backend\api\client\ClientController;
-use App\Http\Controllers\backend\api\dashboard\DashboarController;
 use App\Http\Controllers\backend\api\layout\LayoutController;
 use App\Http\Controllers\backend\api\invoice\InvoiceController;
 use App\Http\Controllers\backend\api\role\PermissionController;
+use App\Http\Controllers\backend\api\hospital\HospitalController;
 use App\Http\Controllers\backend\api\settings\SettingsController;
+use App\Http\Controllers\backend\api\dashboard\DashboarController;
 use App\Http\Controllers\backend\api\payment\PaymentCardController;
 use App\Http\Controllers\backend\api\transition\TransitionController;
 use App\Http\Controllers\backend\api\payment\PaymentIntegrationController;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,8 +60,9 @@ Route::prefix('backend')->middleware('auth:api')->group(function () {
     Route::get('payment-integration/{type}', [PaymentIntegrationController::class, 'index']);
     Route::post('payment-integration/{type}', [PaymentIntegrationController::class, 'store']);
     Route::get('customers-list', [UserController::class,'getCustomerList']);
-    Route::get('transitions', [TransitionController::class, 'getTransitions']);
-    Route::get('my-transitions', [TransitionController::class, 'getMyTransitions']);
+    Route::get('transactions', [TransitionController::class, 'getTransitions']);
+    Route::get('my-transactions', [TransitionController::class, 'getMyTransitions']);
+    Route::get('my-wallet', [WalletController::class, 'getMyWallet']);
     Route::resource('invoice', InvoiceController::class);
     Route::get('my-invoices', [InvoiceController::class, 'getMyInvoice']);
     Route::post('approved-invoice', [InvoiceController::class, 'approveInvoice']);

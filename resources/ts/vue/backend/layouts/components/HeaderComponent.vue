@@ -279,7 +279,8 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <span class="fw-semibold d-block">{{ auth_user.name }}</span
-                                         ><small class="text-muted">{{ auth_user?.role?.name  ?? 'NA'}}</small>
+                                         >
+                                         <small class="text-muted">{{ auth_user?.roles[0].name  ?? 'NA'}}</small>
                                     </div>
                                 </div>
                             </a>

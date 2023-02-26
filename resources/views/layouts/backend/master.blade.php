@@ -83,7 +83,7 @@
     <script>
         window.app_config={app_name:"{{config('app.name')}}"};
         @auth
-           window.user = {!! json_encode(Auth::user()->load('wallet'), true) !!};
+           window.user = {!! json_encode(Auth::user()->load('wallet','roles'), true) !!};
         //    window.permissions=[];
         let permissions = {!! json_encode(Auth::user()->getPermissionsViaRoles()->pluck('name'), true) !!};
         @else

@@ -80,8 +80,8 @@
                                 <div class="cardMaster bg-lighter p-3 rounded mb-3" v-for="item in cards" :key="item.id">
                                     <div class="d-flex justify-content-between flex-sm-row flex-column">
                                         <div class="card-information me-2">
-                                            <img class="mb-3 img-fluid" :src="`/assets/images/${getImageType(item)}`"
-                                                alt="Master Card">
+                                            <!-- <img class="mb-3 img-fluid" :src="`/assets/images/${getImageType(item)}`" -->
+                                                <!-- alt="> -->
                                             <div class="d-flex align-items-center mb-2 flex-wrap gap-2">
                                                 <p class="mb-0 me-2">{{item.credentials.name}}</p>
                                                 <span class="badge bg-label-dark" v-if="item.primary_card==1">Primary</span>
@@ -125,6 +125,7 @@ export default {
     }),
     methods: {
         getImageType(item){
+            console.log(item);
             switch (item.card_type) {
                 case "Mastercard":
                     return "mastercard.png";

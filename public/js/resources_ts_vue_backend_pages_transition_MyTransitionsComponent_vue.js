@@ -289,18 +289,13 @@ __webpack_require__.r(__webpack_exports__);
     loadingStart: function loadingStart(value) {
       this.loading = value;
     },
-    editItem: function editItem(item) {
-      this.edit_mode = true;
-      this.invoice = item;
-      $("#modal_id").modal("show");
-    },
     gettransitions: function gettransitions() {
       var _this = this;
 
       var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
       this.loading = true;
       this.page_num = page;
-      axios.get('/my-transitions?page=' + page + "&query=" + this.query).then(function (response) {
+      axios.get('/my-transactions?page=' + page + "&query=" + this.query).then(function (response) {
         _this.transitions = response.data.transitions;
         _this.loading = false;
       })["catch"](function (err) {
@@ -613,7 +608,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "d-flex justify-content-between align-items-center mb-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
   "class": "card-title"
-}, "Lastest My Transitions")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div")], -1
+}, "Latest My Transactions")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div")], -1
 /* HOISTED */
 );
 
@@ -632,30 +627,6 @@ var _hoisted_6 = {
 var _hoisted_7 = {
   "class": "card-datatable table-responsive pt-0"
 };
-var _hoisted_8 = {
-  "class": "modal fade text-start",
-  id: "modal_id",
-  tabindex: "-1",
-  "aria-labelledby": "myModalLabel17",
-  "aria-modal": "true",
-  invoice: "dialog"
-};
-var _hoisted_9 = {
-  "class": "modal-dialog modal-dialog-centered modal-lg"
-};
-var _hoisted_10 = {
-  "class": "modal-content"
-};
-var _hoisted_11 = {
-  "class": "modal-header bg-transparent"
-};
-var _hoisted_12 = {
-  "class": "modal-body px-sm-5"
-};
-var _hoisted_13 = {
-  "class": "text-center mb-1",
-  id: "myModalLabel17"
-};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_breadcrumb = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("breadcrumb");
 
@@ -666,10 +637,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_transitions_table = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("transitions-table");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_breadcrumb, {
-    active_name: "transitions List"
+    active_name: "Transactions List"
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_search_input, {
-    label: "Search By Invoice No",
-    apiurl: '/transitions?page=' + this.page_num,
+    label: "Search ",
+    apiurl: '/my-transactions?page=' + this.page_num,
     onQuery: _cache[0] || (_cache[0] = function ($event) {
       return $options.isQuery($event);
     }),
@@ -692,24 +663,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     query: $data.query,
     gettransitions: _ctx.getinvoice,
     onEditItem: _cache[4] || (_cache[4] = function ($event) {
-      return $options.editItem($event);
+      return _ctx.editItem($event);
     }),
     onDeleteItem: _cache[5] || (_cache[5] = function ($event) {
       return _ctx.deleteItem($event);
     })
   }, null, 8
   /* PROPS */
-  , ["transitions", "query", "gettransitions"]))])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal to add new invoice starts"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    type: "button",
-    onClick: _cache[6] || (_cache[6] = function () {
-      return _ctx.closeModal && _ctx.closeModal.apply(_ctx, arguments);
-    }),
-    "class": "btn-close",
-    "data-bs-dismiss": "modal",
-    "aria-label": "Close"
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.edit_mode ? "Edit Invoice" : "Create Invoice"), 1
-  /* TEXT */
-  )])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Modal to add new invoice Ends")]);
+  , ["transitions", "query", "gettransitions"]))])])])]);
 }
 
 /***/ }),
@@ -752,7 +713,14 @@ var _hoisted_6 = {
 var _hoisted_7 = {
   "class": "d-flex flex-column"
 };
-var _hoisted_8 = ["onClick"];
+var _hoisted_8 = {
+  style: {
+    "margin-left": "10px",
+    "margin-top": "9px"
+  },
+  role: "button",
+  "class": "transition_name text-truncate text-body"
+};
 var _hoisted_9 = {
   "class": "fw-bolder"
 };
@@ -779,21 +747,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       name: "0" + transition.id
     }, null, 8
     /* PROPS */
-    , ["name"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-      style: {
-        "margin-left": "10px",
-        "margin-top": "9px"
-      },
-      role: "button",
-      onClick: function onClick($event) {
-        return $options.editItem(transition);
-      },
-      "class": "transition_name text-truncate text-body"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(transition === null || transition === void 0 ? void 0 : transition.slug), 1
+    , ["name"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(transition === null || transition === void 0 ? void 0 : transition.slug), 1
     /* TEXT */
-    )], 8
-    /* PROPS */
-    , _hoisted_8)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(transition === null || transition === void 0 ? void 0 : transition["package"].name), 1
+    )])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(transition === null || transition === void 0 ? void 0 : transition["package"].name), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" / " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(transition["package"].unit_cost) + " gm ", 1
     /* TEXT */

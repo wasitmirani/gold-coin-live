@@ -4,7 +4,7 @@
           <div class="row">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <h5 class="card-title">Lastest My Invoices</h5>
+                    <h5 class="card-title">Latest My Invoices</h5>
                 </div>
             </div>
             <div class="card">

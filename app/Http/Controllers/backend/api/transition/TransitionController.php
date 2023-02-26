@@ -22,6 +22,7 @@ class TransitionController extends Controller
 
     public function getMyTransitions(Request $request){
         $transitions=PaymentCharge::latest()
+        ->where('slug', 'LIKE', '%' . $request->get('query') . '%')
         ->where('user_id',$request->user()->id)
         ->with('user','package')->paginate(env('PAR_PAGE'));
 

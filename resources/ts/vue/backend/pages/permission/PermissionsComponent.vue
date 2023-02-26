@@ -118,6 +118,7 @@
                   $("#modal_id").modal("show");
              },
              deleteItem(item){
+                console.log(item);
                  Swal.fire({
                   title: 'Are you sure?',
                   text: "You won't be able to revert this!",
@@ -128,7 +129,7 @@
                   confirmButtonText: 'Yes, delete it!'
                   }).then((result) => {
                   if (result.isConfirmed) {
-                         axios.delete(`permission/${item.id}`).then((res)=>{
+                         axios.delete(`permission/${item?.id}`).then((res)=>{
                               this.$root.alertNotify(res.status,'Destroyed Successfuly','info',res.data);
                               this.getPermissions();
                            })

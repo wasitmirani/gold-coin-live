@@ -39,8 +39,8 @@ let setRoute=(url:string,name:string,path:string)=>{
     setRoute('/settings','settings','setting/Settings'),
     setRoute('/stripe-integration','stripe-integration','payment/Stripe'),
     setRoute('/paypal-integration','paypal-integration','payment/Paypal'),
-    setRoute('/transitions','transitions','transition/Transitions'),
-    setRoute('/my-transitions','my-transitions','transition/MyTransitions'),
+    setRoute('/transactions','transactions','transition/Transitions'),
+    setRoute('/my-transactions','my-transactions','transition/MyTransitions'),
     setRoute('/invoices','invoices','invoice/Invoices'),
     setRoute('/my-invoices','my-invoices','invoice/MyInvoices'),
 

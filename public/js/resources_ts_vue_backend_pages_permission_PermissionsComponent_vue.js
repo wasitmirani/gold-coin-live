@@ -464,6 +464,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteItem: function deleteItem(item) {
       var _this = this;
 
+      console.log(item);
       Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -474,7 +475,7 @@ __webpack_require__.r(__webpack_exports__);
         confirmButtonText: 'Yes, delete it!'
       }).then(function (result) {
         if (result.isConfirmed) {
-          axios["delete"]("permission/".concat(item.id)).then(function (res) {
+          axios["delete"]("permission/".concat(item === null || item === void 0 ? void 0 : item.id)).then(function (res) {
             _this.$root.alertNotify(res.status, 'Destroyed Successfuly', 'info', res.data);
 
             _this.getPermissions();
@@ -924,22 +925,24 @@ var _hoisted_8 = ["onClick"];
 var _hoisted_9 = {
   "class": "fw-bolder"
 };
+var _hoisted_10 = ["onClick"];
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ti ti-edit ti-sm me-2"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_11 = [_hoisted_10];
+var _hoisted_12 = [_hoisted_11];
+var _hoisted_13 = ["onClick"];
 
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ti ti-trash ti-sm mx-2"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_13 = [_hoisted_12];
+var _hoisted_15 = [_hoisted_14];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_avatar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("avatar");
 
@@ -972,17 +975,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       role: "button",
-      onClick: _cache[0] || (_cache[0] = function ($event) {
-        return $options.editItem(_ctx.role);
-      }),
+      onClick: function onClick($event) {
+        return $options.editItem(permission);
+      },
       "class": "text-dark"
-    }, _hoisted_11), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    }, _hoisted_12, 8
+    /* PROPS */
+    , _hoisted_10), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       role: "button",
-      onClick: _cache[1] || (_cache[1] = function ($event) {
-        return $options.deleteItem(_ctx.item);
-      }),
+      onClick: function onClick($event) {
+        return $options.deleteItem(permission);
+      },
       "class": "text-danger delete-record"
-    }, _hoisted_13)])]);
+    }, _hoisted_15, 8
+    /* PROPS */
+    , _hoisted_13)])]);
   }), 128
   /* KEYED_FRAGMENT */
   ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_table_footer, {

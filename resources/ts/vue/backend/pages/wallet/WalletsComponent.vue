@@ -31,34 +31,43 @@
           </div>
         <div class="col-sm-6 col-xl-3">
 
-            <stat-card heading="Money Transfered" :value="wallet?.total"
-            :total="wallet?.total" color="dark"
+            <stat-card heading="Money Transfered" :value="0"
+            :total="wallet?.balance" color="dark"
             :currency="wallet?.currency"
              subheading="Total Money Transfered"
              icon="ti ti-coin ti-sm"/>
           </div>
           <div class="col-sm-6 col-xl-3">
-            <stat-card heading=" Deposit" :value="300"
-            :total="wallet?.total" color="success"
+            <stat-card heading=" Deposit" :value="wallet?.deposit"
+            :total="wallet?.balance" color="success"
             :currency="wallet?.currency"
              subheading="Total Deposit"
              icon="ti ti-coin ti-sm"/>
           </div>
           <div class="col-sm-6 col-xl-3">
-            <stat-card heading="Withdraw" :value="0"
-            :total="wallet?.total" color="danger"
+            <stat-card heading="Withdraw" :value="wallet?.withdraw"
+            :total="wallet?.balance" color="danger"
             :currency="wallet?.currency"
              subheading="Total Withdraw"
              icon="ti ti-coin ti-sm"/>
           </div>
 
           <div class="col-sm-6 col-xl-3">
-            <stat-card heading="Exchange" :value="0"
-            :total="wallet?.total" color="warning"
+            <stat-card heading="Exchange" :value="wallet?.exchange"
+            :total="wallet?.balance" color="warning"
             :currency="wallet?.currency"
              subheading="Total Exchange"
              icon="ti ti-exchange ti-sm"/>
           </div>
+          <div class="col-sm-6 col-xl-3">
+            <stat-card heading="Gold Credit" :value="wallet?.gold_credit"
+            :total="wallet?.gold_credit" color="warning"
+            currency="GM"
+             subheading="Total Gold Credit"
+             icon="ti ti-exchange ti-sm"/>
+          </div>
+          
+          
     </div>
     <div class="row">
         <div class="col-md-8">
@@ -146,6 +155,7 @@ export default {
         recent_transactions:[],
     }),
     methods:{
+      
         copy() {
             const textArea = document.createElement("textarea");
               textArea.value = this.auth.uid;

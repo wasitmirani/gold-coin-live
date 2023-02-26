@@ -32,8 +32,8 @@
 
                           <td>{{$filters.DateTimeFormat(permission.created_at)}}</td>
                           <td >
-                            <a role="button"   @click="editItem(role)"   class="text-dark"><i class="ti ti-edit ti-sm me-2"></i></a>
-                             <a role="button" @click="deleteItem(item)" class="text-danger delete-record"><i class="ti ti-trash ti-sm mx-2"></i></a>
+                            <a role="button"   @click="editItem(permission)"   class="text-dark"><i class="ti ti-edit ti-sm me-2"></i></a>
+                             <a role="button" @click="deleteItem(permission)" class="text-danger delete-record"><i class="ti ti-trash ti-sm mx-2"></i></a>
                           </td>
                       </tr>
                   </tbody>

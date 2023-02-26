@@ -445,32 +445,35 @@ var _hoisted_14 = {
   "class": "col-sm-6 col-xl-3"
 };
 var _hoisted_15 = {
-  "class": "row"
+  "class": "col-sm-6 col-xl-3"
 };
 var _hoisted_16 = {
-  "class": "col-md-8"
+  "class": "row"
 };
 var _hoisted_17 = {
+  "class": "col-md-8"
+};
+var _hoisted_18 = {
   "class": "card mb-4"
 };
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
   "class": "card-header"
 }, "Wallet Account ", -1
 /* HOISTED */
 );
 
-var _hoisted_19 = {
+var _hoisted_20 = {
   "class": "card-body"
 };
-var _hoisted_20 = {
+var _hoisted_21 = {
   "class": "row"
 };
-var _hoisted_21 = {
+var _hoisted_22 = {
   "class": "col-md-10 mb-1"
 };
 
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "mb-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
   "class": "mb-1"
@@ -478,22 +481,22 @@ var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_23 = {
+var _hoisted_24 = {
   "class": "mb-3"
 };
-var _hoisted_24 = {
+var _hoisted_25 = {
   "class": "mb-1"
 };
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We will send you a notification upon Subscription expiration", -1
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We will send you a notification upon Subscription expiration", -1
 /* HOISTED */
 );
 
-var _hoisted_26 = {
+var _hoisted_27 = {
   "class": "mb-3"
 };
 
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
   "class": "mb-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "me-2"
@@ -503,18 +506,18 @@ var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_28 = ["value"];
-var _hoisted_29 = {
+var _hoisted_29 = ["value"];
+var _hoisted_30 = {
   "class": "col-12"
 };
-var _hoisted_30 = {
+var _hoisted_31 = {
   "class": "col-xl-4 col-md-6 order-2 order-lg-1"
 };
-var _hoisted_31 = {
+var _hoisted_32 = {
   "class": "card"
 };
 
-var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "card-header d-flex justify-content-between"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "card-title mb-0"
@@ -526,7 +529,7 @@ var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_33 = {
+var _hoisted_34 = {
   "class": "card-body",
   style: {
     "overflow-x": "hidden",
@@ -534,28 +537,28 @@ var _hoisted_33 = {
     "height": "260px"
   }
 };
-var _hoisted_34 = {
+var _hoisted_35 = {
   "class": "list-unstyled mb-0"
 };
-var _hoisted_35 = {
+var _hoisted_36 = {
   key: 0,
   "class": "mb-3 pb-1"
 };
 
-var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "alert alert-warning",
   role: "alert"
 }, " unavailable any wallet transitions ", -1
 /* HOISTED */
 );
 
-var _hoisted_37 = [_hoisted_36];
+var _hoisted_38 = [_hoisted_37];
 
-var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"d-flex align-items-start\"><div class=\"badge bg-label-secondary p-2 me-3 rounded\"><i class=\"ti ti-coin ti-sm\"></i></div><div class=\"d-flex justify-content-between w-100 flex-wrap gap-2\"><div class=\"me-2\"><h6 class=\"mb-0\">Direct Source</h6><small class=\"text-muted\">Direct link click</small></div><div class=\"d-flex align-items-center\"><p class=\"mb-0\">1.2k</p><div class=\"ms-3 badge bg-label-success\">+4.2%</div></div></div></div>", 1);
+var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"d-flex align-items-start\"><div class=\"badge bg-label-secondary p-2 me-3 rounded\"><i class=\"ti ti-coin ti-sm\"></i></div><div class=\"d-flex justify-content-between w-100 flex-wrap gap-2\"><div class=\"me-2\"><h6 class=\"mb-0\">Direct Source</h6><small class=\"text-muted\">Direct link click</small></div><div class=\"d-flex align-items-center\"><p class=\"mb-0\">1.2k</p><div class=\"ms-3 badge bg-label-success\">+4.2%</div></div></div></div>", 1);
 
-var _hoisted_39 = [_hoisted_38];
+var _hoisted_40 = [_hoisted_39];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _ctx$wallet, _ctx$wallet2, _ctx$wallet3, _ctx$wallet4, _ctx$wallet5, _ctx$wallet6, _ctx$wallet7, _ctx$wallet8, _ctx$wallet9, _ctx$wallet10, _ctx$wallet11, _ctx$wallet12;
+  var _ctx$wallet, _ctx$wallet2, _ctx$wallet3, _ctx$wallet4, _ctx$wallet5, _ctx$wallet6, _ctx$wallet7, _ctx$wallet8, _ctx$wallet9, _ctx$wallet10, _ctx$wallet11, _ctx$wallet12, _ctx$wallet13, _ctx$wallet14, _ctx$wallet15, _ctx$wallet16;
 
   var _component_breadcrumb = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("breadcrumb");
 
@@ -577,47 +580,57 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["value", "total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
     heading: "Money Transfered",
-    value: (_ctx$wallet4 = _ctx.wallet) === null || _ctx$wallet4 === void 0 ? void 0 : _ctx$wallet4.total,
-    total: (_ctx$wallet5 = _ctx.wallet) === null || _ctx$wallet5 === void 0 ? void 0 : _ctx$wallet5.total,
+    value: 0,
+    total: (_ctx$wallet4 = _ctx.wallet) === null || _ctx$wallet4 === void 0 ? void 0 : _ctx$wallet4.balance,
     color: "dark",
-    currency: (_ctx$wallet6 = _ctx.wallet) === null || _ctx$wallet6 === void 0 ? void 0 : _ctx$wallet6.currency,
+    currency: (_ctx$wallet5 = _ctx.wallet) === null || _ctx$wallet5 === void 0 ? void 0 : _ctx$wallet5.currency,
     subheading: "Total Money Transfered",
     icon: "ti ti-coin ti-sm"
   }, null, 8
   /* PROPS */
-  , ["value", "total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
+  , ["total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
     heading: " Deposit",
-    value: 300,
-    total: (_ctx$wallet7 = _ctx.wallet) === null || _ctx$wallet7 === void 0 ? void 0 : _ctx$wallet7.total,
+    value: (_ctx$wallet6 = _ctx.wallet) === null || _ctx$wallet6 === void 0 ? void 0 : _ctx$wallet6.deposit,
+    total: (_ctx$wallet7 = _ctx.wallet) === null || _ctx$wallet7 === void 0 ? void 0 : _ctx$wallet7.balance,
     color: "success",
     currency: (_ctx$wallet8 = _ctx.wallet) === null || _ctx$wallet8 === void 0 ? void 0 : _ctx$wallet8.currency,
     subheading: "Total Deposit",
     icon: "ti ti-coin ti-sm"
   }, null, 8
   /* PROPS */
-  , ["total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
+  , ["value", "total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
     heading: "Withdraw",
-    value: 0,
-    total: (_ctx$wallet9 = _ctx.wallet) === null || _ctx$wallet9 === void 0 ? void 0 : _ctx$wallet9.total,
+    value: (_ctx$wallet9 = _ctx.wallet) === null || _ctx$wallet9 === void 0 ? void 0 : _ctx$wallet9.withdraw,
+    total: (_ctx$wallet10 = _ctx.wallet) === null || _ctx$wallet10 === void 0 ? void 0 : _ctx$wallet10.balance,
     color: "danger",
-    currency: (_ctx$wallet10 = _ctx.wallet) === null || _ctx$wallet10 === void 0 ? void 0 : _ctx$wallet10.currency,
+    currency: (_ctx$wallet11 = _ctx.wallet) === null || _ctx$wallet11 === void 0 ? void 0 : _ctx$wallet11.currency,
     subheading: "Total Withdraw",
     icon: "ti ti-coin ti-sm"
   }, null, 8
   /* PROPS */
-  , ["total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
+  , ["value", "total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
     heading: "Exchange",
-    value: 0,
-    total: (_ctx$wallet11 = _ctx.wallet) === null || _ctx$wallet11 === void 0 ? void 0 : _ctx$wallet11.total,
+    value: (_ctx$wallet12 = _ctx.wallet) === null || _ctx$wallet12 === void 0 ? void 0 : _ctx$wallet12.exchange,
+    total: (_ctx$wallet13 = _ctx.wallet) === null || _ctx$wallet13 === void 0 ? void 0 : _ctx$wallet13.balance,
     color: "warning",
-    currency: (_ctx$wallet12 = _ctx.wallet) === null || _ctx$wallet12 === void 0 ? void 0 : _ctx$wallet12.currency,
+    currency: (_ctx$wallet14 = _ctx.wallet) === null || _ctx$wallet14 === void 0 ? void 0 : _ctx$wallet14.currency,
     subheading: "Total Exchange",
     icon: "ti ti-exchange ti-sm"
   }, null, 8
   /* PROPS */
-  , ["total", "currency"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Current Plan "), _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", _hoisted_24, "Actived Date " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$filters.DateFormat(_ctx.auth.created_at)), 1
+  , ["value", "total", "currency"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_stat_card, {
+    heading: "Gold Credit",
+    value: (_ctx$wallet15 = _ctx.wallet) === null || _ctx$wallet15 === void 0 ? void 0 : _ctx$wallet15.gold_credit,
+    total: (_ctx$wallet16 = _ctx.wallet) === null || _ctx$wallet16 === void 0 ? void 0 : _ctx$wallet16.gold_credit,
+    color: "warning",
+    currency: "GM",
+    subheading: "Total Gold Credit",
+    icon: "ti ti-exchange ti-sm"
+  }, null, 8
+  /* PROPS */
+  , ["value", "total"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Current Plan "), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [_hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", _hoisted_25, "Actived Date " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$filters.DateFormat(_ctx.auth.created_at)), 1
   /* TEXT */
-  ), _hoisted_25]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), _hoisted_26]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     value: _ctx.auth.uid,
     "class": "form-control copytoken",
@@ -626,20 +639,20 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     placeholder: "Universal Wallet ID"
   }, null, 8
   /* PROPS */
-  , _hoisted_28)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  , _hoisted_29)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function () {
       return $options.copy && $options.copy.apply($options, arguments);
     }),
     "class": "btn btn-success me-2 mt-2 waves-effect waves-light",
     "data-bs-toggle": "modal",
     "data-bs-target": "#pricingModal"
-  }, "Copy Wallet ID")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" /Current Plan ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_34, [_ctx.recent_transactions.length < 1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_35, _hoisted_37)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+  }, "Copy Wallet ID")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" /Current Plan ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_35, [_ctx.recent_transactions.length < 1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_36, _hoisted_38)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 1
   }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.recent_transactions, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       "class": "mb-3 pb-1",
       key: item
-    }, _hoisted_39);
+    }, _hoisted_40);
   }), 128
   /* KEYED_FRAGMENT */
   ))])])])])])], 64

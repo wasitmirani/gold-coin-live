@@ -4,7 +4,7 @@
           <div class="row">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <h5 class="card-title">Lastest Invoices</h5>
+                    <h5 class="card-title">Latest Invoices</h5>
                 </div>
                 <div>
                     <a  invoice="button" style="float:right"   @click="modalOpen"  class="dt-button add-new btn btn-primary"

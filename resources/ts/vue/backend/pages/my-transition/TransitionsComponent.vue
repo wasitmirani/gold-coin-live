@@ -4,7 +4,7 @@
           <div class="row">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <h5 class="card-title">Lastest Transitions</h5>
+                    <h5 class="card-title">Latest Transitions</h5>
                 </div>
                 <div>
                 </div>
@@ -14,7 +14,7 @@
           <div class="card-body border-bottom">
           <div class="row">
                <div class="col-xl-4 col-md-6 col-12">
-                <search-input label="Search By Invoice No" :apiurl="'/transitions?page=' +this.page_num" v-on:query="isQuery($event)" v-on:loading="loadingStart($event)" v-on:reload="gettransitions()" v-on:filterData="filterData($event)" ></search-input>
+                <search-input label="Search By Invoice No" :apiurl="'/transactions?page=' +this.page_num" v-on:query="isQuery($event)" v-on:loading="loadingStart($event)" v-on:reload="gettransitions()" v-on:filterData="filterData($event)" ></search-input>
               </div>
           </div>
           </div>
@@ -55,7 +55,7 @@
   import GroupAvatar from "../../components/GroupAvatarComponent.vue";
   import Breadcrumb from "../../components/BreadcrumbComponent.vue";
   import LoaderBox from "../../components/LoaderBoxComponent.vue";
-  import TransitionsTable from "./TransitionsTable.vue";
+  import TransitionsTable from "./transactionsTable.vue";
   export default {
          components: {SearchInput,LoaderBox,Breadcrumb,GroupAvatar,TransitionsTable},
       data(){
@@ -91,7 +91,7 @@
           gettransitions(page=1){
                  this.loading= true;
                  this.page_num = page;
-                 axios.get('/my-transitions?page='+page+"&query="+this.query).then(response => {
+                 axios.get('/my-transactions?page='+page+"&query="+this.query).then(response => {
                      this.transitions = response.data.transitions;
                       this.loading= false;
                  }).catch((err)=>{

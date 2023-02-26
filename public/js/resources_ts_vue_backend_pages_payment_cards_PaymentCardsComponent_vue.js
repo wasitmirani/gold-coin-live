@@ -74,6 +74,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   methods: {
     getImageType: function getImageType(item) {
+      console.log(item);
+
       switch (item.card_type) {
         case "Mastercard":
           return "mastercard.png";
@@ -483,45 +485,44 @@ var _hoisted_33 = {
 var _hoisted_34 = {
   "class": "card-information me-2"
 };
-var _hoisted_35 = ["src"];
-var _hoisted_36 = {
+var _hoisted_35 = {
   "class": "d-flex align-items-center mb-2 flex-wrap gap-2"
 };
-var _hoisted_37 = {
+var _hoisted_36 = {
   "class": "mb-0 me-2"
 };
-var _hoisted_38 = {
+var _hoisted_37 = {
   key: 0,
   "class": "badge bg-label-dark"
 };
-var _hoisted_39 = {
+var _hoisted_38 = {
   "class": "card-number"
 };
-var _hoisted_40 = {
+var _hoisted_39 = {
   "class": "d-flex flex-column text-start text-lg-end"
 };
-var _hoisted_41 = {
+var _hoisted_40 = {
   "class": "d-flex order-sm-0 order-1 mt-sm-0 mt-3"
 };
-var _hoisted_42 = ["onClick"];
+var _hoisted_41 = ["onClick"];
 
-var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ti ti-edit ti-sm me-2"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_44 = [_hoisted_43];
-var _hoisted_45 = ["onClick"];
+var _hoisted_43 = [_hoisted_42];
+var _hoisted_44 = ["onClick"];
 
-var _hoisted_46 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ti ti-trash ti-sm mx-2"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_47 = [_hoisted_46];
-var _hoisted_48 = {
+var _hoisted_46 = [_hoisted_45];
+var _hoisted_47 = {
   "class": "mt-sm-auto mt-2 order-sm-1 order-0"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -592,33 +593,27 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "cardMaster bg-lighter p-3 rounded mb-3",
       key: item.id
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-      "class": "mb-3 img-fluid",
-      src: "/assets/images/".concat($options.getImageType(item)),
-      alt: "Master Card"
-    }, null, 8
-    /* PROPS */
-    , _hoisted_35), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.credentials.name), 1
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img class=\"mb-3 img-fluid\" :src=\"`/assets/images/${getImageType(item)}`\" "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" alt=\"> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.credentials.name), 1
     /* TEXT */
-    ), item.primary_card == 1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_38, "Primary")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_39, "∗∗∗∗ ∗∗∗∗ " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.credentials.card_number.substr(item.credentials.card_number.length - 4)), 1
+    ), item.primary_card == 1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_37, "Primary")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_38, "∗∗∗∗ ∗∗∗∗ " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.credentials.card_number.substr(item.credentials.card_number.length - 4)), 1
     /* TEXT */
-    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       role: "button",
       onClick: function onClick($event) {
         return $options.editItem(item);
       },
       "class": "text-dark"
-    }, _hoisted_44, 8
+    }, _hoisted_43, 8
     /* PROPS */
-    , _hoisted_42), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    , _hoisted_41), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
       role: "button",
       onClick: function onClick($event) {
         return $options.deleteItem(item);
       },
       "class": "text-danger delete-record"
-    }, _hoisted_47, 8
+    }, _hoisted_46, 8
     /* PROPS */
-    , _hoisted_45)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", _hoisted_48, "Card expires at " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.credentials.exp_date), 1
+    , _hoisted_44)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", _hoisted_47, "Card expires at " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.credentials.exp_date), 1
     /* TEXT */
     )])])]);
   }), 128
