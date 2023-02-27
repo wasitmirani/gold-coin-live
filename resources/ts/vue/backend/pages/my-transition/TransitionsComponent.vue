@@ -55,7 +55,7 @@
   import GroupAvatar from "../../components/GroupAvatarComponent.vue";
   import Breadcrumb from "../../components/BreadcrumbComponent.vue";
   import LoaderBox from "../../components/LoaderBoxComponent.vue";
-  import TransitionsTable from "./transactionsTable.vue";
+  import TransitionsTable from "./TransitionsTable.vue";
   export default {
          components: {SearchInput,LoaderBox,Breadcrumb,GroupAvatar,TransitionsTable},
       data(){
