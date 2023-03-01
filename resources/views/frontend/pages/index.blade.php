@@ -137,9 +137,18 @@ a{
      <div class="video-container embed-responsive embed-responsive-16by9" >
 
       <video autoplay loop muted  id="video-bg">
-
-        <source src="{{asset('/assets/images/video.mp4')}}" type="video/mp4">
-        <source src="{{asset('/assets/images/video.mp4')}}" type="video/ogg">
+        @if(!empty(request('language')))
+        @if(request('language')=="english")
+        <source src="{{asset('/assets/images/english.mp4')}}" type="video/mp4">
+        <source src="{{asset('/assets/images/english.mp4')}}" type="video/ogg">
+        @elseif(request('language')=="hindi")
+        <source src="{{asset('/assets/images/hindi.mp4')}}" type="video/mp4">
+       <source src="{{asset('/assets/images/hindi.mp4')}}" type="video/ogg">
+        @endif
+        @else
+        <source src="{{asset('/assets/images/english.mp4')}}" type="video/mp4">
+        <source src="{{asset('/assets/images/english.mp4')}}" type="video/ogg">
+        @endif
       </video>
 
 

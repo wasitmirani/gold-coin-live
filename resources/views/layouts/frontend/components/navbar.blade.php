@@ -55,9 +55,21 @@
                 <li class="nav-item nav-item-has-children">
                     <a href="{{ route('contact') }}" class="nav-link-item ">Contact Us </a>
                 </li>
-              <!--  <li class="nav-item nav-item-has-children">-->
-              <!--    <a href="{{ route('bank') }}" class="nav-link-item ">Bank Info</a>-->
-              <!--</li>-->
+                <li class="nav-item nav-item-has-children">
+                    <a href="#" class="nav-link-item drop-trigger">{{!empty(request('language'))  ? request('language') : 'language'  }} <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu" id="submenu-1">
+                      <li class="sub-menu--item">
+                        <a href="{{ route('home',['language'=>'english']) }}">English</a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="{{ route('home',['language'=>'hindi']) }}">Hindi</a>
+                      </li>
+                      {{-- <li class="sub-menu--item">
+                        <a href="{{ route('digitalCoinWork') }}">How It Works</a>
+                      </li> --}}
+
+                    </ul>
+                  </li>
 
 
 
