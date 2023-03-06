@@ -29,7 +29,7 @@ function getGoldApi(){
     } catch (\Throwable $th) {
         //throw $th;
     }
- 
+
 }
 
 
@@ -58,14 +58,24 @@ function singleImgUpload($request, $path)
 function goldRates(){
    $XAU_gold= getGoldApi();
 //    1 troy ounce  gold rate
-   $today_gold_rate=1/$XAU_gold;
-   $one_gram_usd=$today_gold_rate/31.1035;
-   $rates=GoldRate::orderBy('unit_cost','asc')->get();
-    foreach ($rates as $key => $rate) {
-        $gram_rate= round($one_gram_usd * $rate->unit_cost,2);
-        $rate->update(['rate'=>$gram_rate,'base_rate'=>$gram_rate]);
+    try {
+        //code...
+        $today_gold_rate=1/$XAU_gold;
+        $one_gram_usd=$today_gold_rate/31.1035;
+        $rates=GoldRate::orderBy('unit_cost','asc')->get();
+         foreach ($rates as $key => $rate) {
+             $gram_rate= round($one_gram_usd * $rate->unit_cost,2);
+             $rate->update(['rate'=>$gram_rate,'base_rate'=>$gram_rate]);
+         }
+         return $rates;
+    } catch (\Throwable $th) {
+        //throw $th;
+
+        $rates=GoldRate::orderBy('unit_cost','asc')->get();
     }
-    return $rates;
+
+    return   $rates;
+
 }
 
 function getCountry(){

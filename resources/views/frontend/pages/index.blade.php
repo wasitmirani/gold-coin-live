@@ -135,8 +135,17 @@ a{
 
 <div class="fugu-hero-section">
      <div class="video-container embed-responsive embed-responsive-16by9" >
+        @if(!empty(request('language')))
+        @if(request('language')=="english")
+        <iframe id="video-bg"  width="100%" height="100%" src="https://www.youtube.com/embed/CbjxlxWQxNQ?autoplay=1&mute=1&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        @elseif(request('language')=="hindi")
+        <iframe id="video-bg" width="100%" height="100%" src="https://www.youtube.com/embed/UO0d-FMJ7hU?autoplay=1&mute=1&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        @endif
+        @else
+        <iframe  id="video-bg" width="100%" height="100%" src="https://www.youtube.com/embed/CbjxlxWQxNQ?autoplay=1&mute=1&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        @endif
 
-      <video autoplay loop muted  id="video-bg">
+      {{-- <video autoplay loop muted  id="video-bg">
         @if(!empty(request('language')))
         @if(request('language')=="english")
         <source src="{{asset('/assets/images/english.mp4')}}" type="video/mp4">
@@ -149,7 +158,7 @@ a{
         <source src="{{asset('/assets/images/english.mp4')}}" type="video/mp4">
         <source src="{{asset('/assets/images/english.mp4')}}" type="video/ogg">
         @endif
-      </video>
+      </video> --}}
 
 
 
