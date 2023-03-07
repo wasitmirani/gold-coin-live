@@ -6,7 +6,6 @@
         <div class="brand-logo">
           <a href="{{ url('/') }}">
             <img src="{{ asset('/assets/images/logo.png') }}" alt="" width="80" class="light-version-logo">
-
           </a>
 
           {{--  <h2 class="wow fadeInUpX">{{ config('app.name') }}</h2>  --}}
@@ -25,9 +24,7 @@
                 <li class="nav-item nav-item-has-children">
                     <a href="{{url('/') }}" class="nav-link-item {{ Request::routeIs('home') ? 'active' : '' }}">Home </a>
                 </li>
-                <!--<li class="nav-item nav-item-has-children">-->
-                <!--    <a href="{{ route('about') }}" class="nav-link-item ">About </a>-->
-                <!--</li>-->
+
                 <li class="nav-item nav-item-has-children">
                 <a href="#" class="nav-link-item drop-trigger">About <i class="fas fa-angle-down"></i></a>
                 <ul class="sub-menu" id="submenu-1">
@@ -49,14 +46,15 @@
                 <li class="nav-item nav-item-has-children">
                     <a href="{{ route('services') }}" class="nav-link-item ">Services </a>
                 </li>
-                <!--<li class="nav-item nav-item-has-children">-->
-                <!--    <a href="#" class="nav-link-item ">Blogs </a>-->
-                <!--</li>-->
+
                 <li class="nav-item nav-item-has-children">
                     <a href="{{ route('contact') }}" class="nav-link-item ">Contact Us </a>
                 </li>
                 <li class="nav-item nav-item-has-children">
-                    <a href="#" class="nav-link-item drop-trigger">{{!empty(request('language'))  ? request('language') : 'language'  }} <i class="fas fa-angle-down"></i></a>
+                    <a href="#" class="nav-link-item drop-trigger">
+                    {{!empty(request('language'))  ? request('language') : 'language'  }}
+                    <i class="fas fa-angle-down"></i>
+                    </a>
                     <ul class="sub-menu" id="submenu-1">
                       <li class="sub-menu--item">
                         <a href="{{ route('home',['language'=>'english']) }}">English</a>
@@ -64,9 +62,6 @@
                       <li class="sub-menu--item">
                         <a href="{{ route('home',['language'=>'hindi']) }}">Hindi</a>
                       </li>
-                      {{-- <li class="sub-menu--item">
-                        <a href="{{ route('digitalCoinWork') }}">How It Works</a>
-                      </li> --}}
 
                     </ul>
                   </li>
@@ -114,6 +109,7 @@
 
                 {{getCountry()}}
                 </strong>
+        
 
         </div>
         <!-- mobile menu trigger -->
@@ -124,3 +120,4 @@
       </nav>
     </div>
   </header>
+

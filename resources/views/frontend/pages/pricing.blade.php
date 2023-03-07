@@ -1,6 +1,6 @@
 @extends('layouts.frontend.master')
 
-@section('title', 'About')
+@section('title', 'Pricing')
 @section('content')
 
 @component('frontend.components.breadcrumb',['active'=>'Pricing'])

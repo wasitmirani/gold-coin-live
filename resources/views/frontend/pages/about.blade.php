@@ -1,7 +1,6 @@
 @extends('layouts.frontend.master')
 
-@section('title', 'About')
-
+@section('title', 'About us')
 <style>
     @media (max-width: 991px){
 .fugu-about-thumb {
@@ -11,7 +10,11 @@
 }}
 
 </style>
+
 @section('content')
+
+
+
 @component('frontend.components.breadcrumb',['active'=>'About us'])
 
 @endcomponent
@@ -131,6 +134,7 @@ Take a step in the right direction by becoming a member of our organization toda
     </div>
   </div>
 
- 
+
+
 
 @endsection

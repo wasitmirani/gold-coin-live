@@ -1,6 +1,6 @@
 
 @extends('layouts.frontend.master')
-
+@section('title', 'Home')
 <style>
         .navigation{
   padding-top:30px;
@@ -134,97 +134,26 @@ a{
 @section('content')
 
 <div class="fugu-hero-section">
-     <div class="video-container embed-responsive embed-responsive-16by9" >
-        @if(!empty(request('language')))
-        @if(request('language')=="english")
-        <iframe id="video-bg"  width="100%" height="100%" src="https://www.youtube.com/embed/CbjxlxWQxNQ?autoplay=1&mute=1&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        @elseif(request('language')=="hindi")
-        <iframe id="video-bg" width="100%" height="100%" src="https://www.youtube.com/embed/UO0d-FMJ7hU?autoplay=1&mute=1&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        @endif
-        @else
-        <iframe  id="video-bg" width="100%" height="100%" src="https://www.youtube.com/embed/CbjxlxWQxNQ?autoplay=1&mute=1&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        @endif
-
-      {{-- <video autoplay loop muted  id="video-bg">
-        @if(!empty(request('language')))
-        @if(request('language')=="english")
-        <source src="{{asset('/assets/images/english.mp4')}}" type="video/mp4">
-        <source src="{{asset('/assets/images/english.mp4')}}" type="video/ogg">
-        @elseif(request('language')=="hindi")
-        <source src="{{asset('/assets/images/hindi.mp4')}}" type="video/mp4">
-       <source src="{{asset('/assets/images/hindi.mp4')}}" type="video/ogg">
-        @endif
-        @else
-        <source src="{{asset('/assets/images/english.mp4')}}" type="video/mp4">
-        <source src="{{asset('/assets/images/english.mp4')}}" type="video/ogg">
-        @endif
-      </video> --}}
-
-
-
-    </div>
-    {{-- <div class="container">
-
-
-      <div class="row">
-        <div class="col-xl-9 col-lg-9">
-          <div class="fugu-hero-content">
-            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Guard Your Wealth  </h2>
-            <h2 class="wow fadeInUpX goldheading" data-wow-delay="0s">Guard Your Health </h2>
-
-            <p class="wow fadeInUpX goldheading" data-wow-delay="0.25s">The Ultimate Solution Against Inflation & Expensive Medical Services.</p>
-
-          </div>
-        </div>
-      </div>
-    </div> --}}
-    <div class="fugu-shape1">
-      <img src="{{asset('assets/images/shape/shape1.png')}}" alt="">
-    </div>
+    <div class="video-container embed-responsive embed-responsive-16by9" >
+       @if(!empty(request('language')))
+       @if(request('language')=="english")
+       <iframe id="video-bg"  width="100%" height="100%" src="https://www.youtube.com/embed/CbjxlxWQxNQ?autoplay=1&mute=0&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       @elseif(request('language')=="hindi")
+       <iframe id="video-bg" width="100%" height="100%" src="https://www.youtube.com/embed/UO0d-FMJ7hU?autoplay=1&mute=0&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       @endif
+       @else
+       <iframe  id="video-bg" width="100%" height="100%" src="https://www.youtube.com/embed/CbjxlxWQxNQ?autoplay=1&mute=0&rel=0&showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       @endif
     </div>
 
-  <!-- End hero section -->
 
-  <!--<div class="fugu-client-section bg-gray-800">-->
-  <!--  <div class="container">-->
-  <!--    <div class="fugu-client-title text-white">-->
-  <!--      <h5>Trusted by 1600+ of the worlds most popular companies</h5>-->
-  <!--    </div>-->
-  <!--    <div class="fugu-client-slider">-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client1.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client2.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client3.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client4.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client5.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client1.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client2.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client3.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client4.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--      <div class="fugu-brand-logo">-->
-  <!--        <img src="{{asset('assets/images/all-img/client5.png')}}" alt="">-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </div>-->
-  <!--</div>-->
-  <!-- End client section -->
+   <div class="fugu-shape1">
+     <img src="{{asset('assets/images/shape/shape1.png')}}" alt="">
+   </div>
+   </div>
+
+
+
 
   <div class="section bg-warning-600 fugu-section-padding z-index">
     <div class="container">
@@ -553,25 +482,5 @@ This wallet gold can be then used to pay for medical services from medical insti
   <div class="fugu-go-top">
     <img src="{{asset('assets/images/svg/arrow-black-right.svg')}}" alt="">
   </div>
-  {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> --}}
-  <script>
 
-
-
-// videoEl.muted=false;
-// videoEl.controls=true;
-
-// videoEl.volume = 1;
-// videoEl.muted=false;
-// videoEl.play();
-// videoEl.pause();
-
-document.addEventListener('click', function() {
-  document.getElementById('video-bg').muted = false;
-});
-
-
-
-
-  </script>
 @endsection
