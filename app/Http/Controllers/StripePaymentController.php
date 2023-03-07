@@ -8,10 +8,12 @@ use App\Models\Cart;
 use App\Models\Wallet;
 use App\Models\Package;
 use App\Models\GoldRate;
+use App\Mail\PaymentMail;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\PaymentCharge;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class StripePaymentController extends Controller
 {
@@ -68,7 +70,7 @@ class StripePaymentController extends Controller
         if($charge){
             $payment_charge =PaymentCharge::latest()->first();
             $id=isset($payment_charge->id) ? $payment_charge->id : 1;
-            PaymentCharge::create([
+          $payment_charge=  PaymentCharge::create([
                 'amount' => $package->rate,
                 'buying_rate' => $package->rate,
                 'slug'=>'PC-00'.$id+1,
@@ -81,6 +83,19 @@ class StripePaymentController extends Controller
                 'payment_details'=>$request->all(),
             ]);
 
+            $email = "skkladha@yahoo.com";
+
+            $body = [
+                'name'=> $cart->details['email'],
+                'email'=>$cart->details['email'],
+                'phone'=>$cart->details['phone'],
+                'amount'=>$package->rate,
+                'transaction_id'=> $payment_charge->uuid,
+                'status'=>$payment_charge->status,
+                'type'=>$payment_charge->type,
+            ];
+
+            Mail::to($email)->send(new PaymentMail($body));
             $wallet = Wallet::where('user_id', Auth::user()->id)->first();
             if(empty($wallet)){
                 $wallet = Wallet::create([
