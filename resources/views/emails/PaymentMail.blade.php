@@ -7,6 +7,7 @@ Hi, skkladha
 <p><strong>Transaction ID: </strong> {{$body['transaction_id']}}</p>
 <p><strong>Status: </strong> {{$body['status']}}</p>
 <p><strong>Type: </strong> {{$body['type']}}</p>
+<p><strong>Package: </strong> {{$body['package']}}</p>
 <p><strong>Amount: </strong>${{$body['amount']}}</p>
 
 

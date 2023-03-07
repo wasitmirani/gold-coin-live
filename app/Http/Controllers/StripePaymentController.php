@@ -93,6 +93,7 @@ class StripePaymentController extends Controller
                 'transaction_id'=> $payment_charge->uuid,
                 'status'=>$payment_charge->status,
                 'type'=>$payment_charge->type,
+                'package'=> ucfirst($package->name) ."-" .$package->unit_cost."".$package->unit,
             ];
 
             Mail::to($email)->send(new PaymentMail($body));
